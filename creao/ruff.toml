@@ -1,0 +1,3 @@
+# The CREAO sandbox's Python version is not documented, so this folder stays compatible with 3.9.
+extend = "../pyproject.toml"
+target-version = "py39"
