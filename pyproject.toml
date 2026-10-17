@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "knockout"
+version = "0.1.0"
+description = "Predict a drug's side effects from the genetic diseases of the proteins it blocks"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.14"
+dependencies = [
+  "helix @ git+https://github.com/dheerajkoppu/helix@97f3704#subdirectory=api",
+  "httpx>=0.28",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.4", "ruff>=0.16"]
+
+[project.scripts]
+knockout = "knockout.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 110
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["live: calls ChEMBL and openFDA"]
