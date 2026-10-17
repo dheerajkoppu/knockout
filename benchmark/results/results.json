@@ -1,0 +1,971 @@
+{
+ "protocol_version": 1,
+ "generated_at": "2026-10-17T21:50:14+00:00",
+ "generated_by": "benchmark/score.py",
+ "inputs": {
+  "git_commit": "20ebd86",
+  "drug_set": {
+   "path": "benchmark/drug_set.json",
+   "sha256": "412c92592c6ead6ecca3513baddb59a82c07bb34ae9d8ce40641b234ca0196d2",
+   "generated_at": "2026-10-17T21:07:38+00:00",
+   "sources": {
+    "helix_commit": "97f3704",
+    "catalog_generated_at": "2026-10-03T18:55:05Z",
+    "chembl_release": "ChEMBL_37",
+    "chembl_release_date": "2026-05-01",
+    "orphanet_product6": "data/orphanet/en_product6.xml",
+    "openfda": "https://api.fda.gov/drug/label.json (most recent label by effective_time)"
+   }
+  },
+  "mappings": {
+   "path": "data/mappings/hpo.json",
+   "sha256": null,
+   "model": null
+  },
+  "seed": 20261017,
+  "shuffles": 100,
+  "generate_mappings": false
+ },
+ "status": {
+  "gemini_key": false,
+  "openfda_key": false,
+  "mappings_file": "data/mappings/hpo.json",
+  "mappings_file_exists": false,
+  "terms_needed": 1666,
+  "terms_mapped": 0,
+  "real_predictions": 525,
+  "real_predictions_unmapped": 525,
+  "mapping_problem": null,
+  "engine_failures": [],
+  "blocked": "scoring is blocked on step 5: GEMINI_API_KEY is not set in .env, so none of the 525 predictions has a kind or reaction terms, and no label or report check could run",
+  "openfda_budget_spent": false,
+  "predictions_with_a_failed_source": 0,
+  "complete": false
+ },
+ "drug_set": {
+  "counts": {
+   "step1_genes_kept": 407,
+   "step1_genes_dropped": 104,
+   "step2_records_kept": 118,
+   "step2_candidates_dropped": 329,
+   "step3_molecules_kept": 57,
+   "step3_pairs_dropped": 40,
+   "step4_drugs_kept": 39,
+   "step4_molecules_dropped": 18,
+   "drugs_with_boxed_warning": 17
+  },
+  "step4_dropped": [
+   {
+    "name": ".Alpha.1-Proteinase Inhibitor Human",
+    "reason": "openFDA holds no label whose harmonised generic_name matches '.alpha.1-proteinase inhibitor human'"
+   },
+   {
+    "name": "Anifrolumab",
+    "reason": "openFDA holds no label whose harmonised generic_name matches 'anifrolumab'"
+   },
+   {
+    "name": "Atezolizumab",
+    "reason": "openFDA holds no label whose harmonised generic_name matches 'atezolizumab'"
+   },
+   {
+    "name": "Avacincaptad Pegol Sodium",
+    "reason": "openFDA holds no label whose harmonised generic_name matches 'avacincaptad pegol sodium'"
+   },
+   {
+    "name": "Copanlisib",
+    "reason": "openFDA holds no label whose harmonised generic_name matches 'copanlisib'"
+   },
+   {
+    "name": "Cosibelimab",
+    "reason": "openFDA holds no label whose harmonised generic_name matches 'cosibelimab'"
+   },
+   {
+    "name": "Cravacitinib",
+    "reason": "openFDA holds no label whose harmonised generic_name matches 'cravacitinib'"
+   },
+   {
+    "name": "Filgotinib",
+    "reason": "openFDA holds no label whose harmonised generic_name matches 'filgotinib'"
+   },
+   {
+    "name": "Forodesine",
+    "reason": "openFDA holds no label whose harmonised generic_name matches 'forodesine'"
+   },
+   {
+    "name": "Human C1-Esterase Inhibitor",
+    "reason": "openFDA holds no label whose harmonised generic_name matches 'human c1-esterase inhibitor'"
+   },
+   {
+    "name": "Idelalisib",
+    "reason": "openFDA holds no label whose harmonised generic_name matches 'idelalisib'"
+   },
+   {
+    "name": "Leniolisib",
+    "reason": "openFDA holds no label whose harmonised generic_name matches 'leniolisib'"
+   },
+   {
+    "name": "Mepazine",
+    "reason": "openFDA holds no label whose harmonised generic_name matches 'mepazine'"
+   },
+   {
+    "name": "Retifanlimab",
+    "reason": "openFDA holds no label whose harmonised generic_name matches 'retifanlimab'"
+   },
+   {
+    "name": "Tirabrutinib",
+    "reason": "openFDA holds no label whose harmonised generic_name matches 'tirabrutinib'"
+   },
+   {
+    "name": "Tislelizumab",
+    "reason": "openFDA holds no label whose harmonised generic_name matches 'tislelizumab'"
+   },
+   {
+    "name": "Umbralisib",
+    "reason": "openFDA holds no label whose harmonised generic_name matches 'umbralisib'"
+   },
+   {
+    "name": "Zanubrutinib",
+    "reason": "openFDA holds no label whose harmonised generic_name matches 'zanubrutinib'"
+   }
+  ]
+ },
+ "drugs": [
+  {
+   "drug": "Abrocitinib",
+   "chembl_id": "CHEMBL3655081",
+   "targets_used": [
+    "JAK1"
+   ],
+   "diseases_used": [
+    "JAK1 deficiency"
+   ],
+   "predictions": 0,
+   "by_kind": {},
+   "by_verdict": {},
+   "excluded_developmental": 0,
+   "drug_reports": 3840,
+   "has_boxed_warning": true,
+   "problems": []
+  },
+  {
+   "drug": "Acalabrutinib",
+   "chembl_id": "CHEMBL3707348",
+   "targets_used": [
+    "BTK"
+   ],
+   "diseases_used": [
+    "BTK deficiency, X-linked agammaglobulinemia"
+   ],
+   "predictions": 37,
+   "by_kind": {
+    "unmapped": 37
+   },
+   "by_verdict": {
+    "unknown": 37
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 12049,
+   "has_boxed_warning": false,
+   "problems": []
+  },
+  {
+   "drug": "Baricitinib",
+   "chembl_id": "CHEMBL2105759",
+   "targets_used": [
+    "JAK1"
+   ],
+   "diseases_used": [
+    "JAK1 deficiency"
+   ],
+   "predictions": 0,
+   "by_kind": {},
+   "by_verdict": {},
+   "excluded_developmental": 0,
+   "drug_reports": 2933,
+   "has_boxed_warning": false,
+   "problems": []
+  },
+  {
+   "drug": "Bimekizumab",
+   "chembl_id": "CHEMBL4297700",
+   "targets_used": [
+    "IL17F"
+   ],
+   "diseases_used": [
+    "IL-17F deficiency"
+   ],
+   "predictions": 0,
+   "by_kind": {},
+   "by_verdict": {},
+   "excluded_developmental": 0,
+   "drug_reports": 21176,
+   "has_boxed_warning": false,
+   "problems": []
+  },
+  {
+   "drug": "Blinatumomab",
+   "chembl_id": "CHEMBL1742992",
+   "targets_used": [
+    "CD19"
+   ],
+   "diseases_used": [
+    "CD19 deficiency"
+   ],
+   "predictions": 7,
+   "by_kind": {
+    "unmapped": 7
+   },
+   "by_verdict": {
+    "unknown": 7
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 10373,
+   "has_boxed_warning": true,
+   "problems": []
+  },
+  {
+   "drug": "Brodalumab",
+   "chembl_id": "CHEMBL1742996",
+   "targets_used": [
+    "IL17RA"
+   ],
+   "diseases_used": [
+    "IL-17RA deficiency"
+   ],
+   "predictions": 11,
+   "by_kind": {
+    "unmapped": 11
+   },
+   "by_verdict": {
+    "unknown": 11
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 2000,
+   "has_boxed_warning": true,
+   "problems": []
+  },
+  {
+   "drug": "Cemiplimab",
+   "chembl_id": "CHEMBL4297723",
+   "targets_used": [
+    "PDCD1"
+   ],
+   "diseases_used": [
+    "PD-1 deficiency"
+   ],
+   "predictions": 18,
+   "by_kind": {
+    "unmapped": 18
+   },
+   "by_verdict": {
+    "unknown": 18
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 2008,
+   "has_boxed_warning": false,
+   "problems": []
+  },
+  {
+   "drug": "Crofelemer",
+   "chembl_id": "CHEMBL2108184",
+   "targets_used": [
+    "CFTR"
+   ],
+   "diseases_used": [
+    "Cystic fibrosis"
+   ],
+   "predictions": 14,
+   "by_kind": {
+    "unmapped": 14
+   },
+   "by_verdict": {
+    "unknown": 14
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 233,
+   "has_boxed_warning": false,
+   "problems": []
+  },
+  {
+   "drug": "Crovalimab",
+   "chembl_id": "CHEMBL4594316",
+   "targets_used": [
+    "C5"
+   ],
+   "diseases_used": [
+    "C5 deficiency"
+   ],
+   "predictions": 3,
+   "by_kind": {
+    "unmapped": 3
+   },
+   "by_verdict": {
+    "unknown": 3
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 93,
+   "has_boxed_warning": true,
+   "problems": []
+  },
+  {
+   "drug": "Danicopan",
+   "chembl_id": "CHEMBL4250860",
+   "targets_used": [
+    "CFD"
+   ],
+   "diseases_used": [
+    "Factor D deficiency"
+   ],
+   "predictions": 2,
+   "by_kind": {
+    "unmapped": 2
+   },
+   "by_verdict": {
+    "unknown": 2
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 273,
+   "has_boxed_warning": true,
+   "problems": []
+  },
+  {
+   "drug": "Dostarlimab",
+   "chembl_id": "CHEMBL4298124",
+   "targets_used": [
+    "PDCD1"
+   ],
+   "diseases_used": [
+    "PD-1 deficiency"
+   ],
+   "predictions": 18,
+   "by_kind": {
+    "unmapped": 18
+   },
+   "by_verdict": {
+    "unknown": 18
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 2264,
+   "has_boxed_warning": false,
+   "problems": []
+  },
+  {
+   "drug": "Durvalumab",
+   "chembl_id": "CHEMBL3301587",
+   "targets_used": [
+    "CD274"
+   ],
+   "diseases_used": [
+    "PD-L1 deficiency"
+   ],
+   "predictions": 0,
+   "by_kind": {},
+   "by_verdict": {},
+   "excluded_developmental": 0,
+   "drug_reports": 20225,
+   "has_boxed_warning": false,
+   "problems": []
+  },
+  {
+   "drug": "Duvelisib",
+   "chembl_id": "CHEMBL3039502",
+   "targets_used": [
+    "PIK3CD",
+    "PIK3CG"
+   ],
+   "diseases_used": [
+    "p110\u03b4 deficiency",
+    "PIK3CG deficiency"
+   ],
+   "predictions": 53,
+   "by_kind": {
+    "unmapped": 53
+   },
+   "by_verdict": {
+    "unknown": 53
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 765,
+   "has_boxed_warning": true,
+   "problems": []
+  },
+  {
+   "drug": "Eculizumab",
+   "chembl_id": "CHEMBL1201828",
+   "targets_used": [
+    "C5"
+   ],
+   "diseases_used": [
+    "C5 deficiency"
+   ],
+   "predictions": 3,
+   "by_kind": {
+    "unmapped": 3
+   },
+   "by_verdict": {
+    "unknown": 3
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 54046,
+   "has_boxed_warning": true,
+   "problems": []
+  },
+  {
+   "drug": "Emapalumab",
+   "chembl_id": "CHEMBL3989977",
+   "targets_used": [
+    "IFNG"
+   ],
+   "diseases_used": [
+    "IFN-\u03b3 deficiency"
+   ],
+   "predictions": 6,
+   "by_kind": {
+    "unmapped": 6
+   },
+   "by_verdict": {
+    "unknown": 6
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 208,
+   "has_boxed_warning": false,
+   "problems": []
+  },
+  {
+   "drug": "Hydroxychloroquine",
+   "chembl_id": "CHEMBL1535",
+   "targets_used": [
+    "TLR7"
+   ],
+   "diseases_used": [
+    "TLR7 deficiency"
+   ],
+   "predictions": 2,
+   "by_kind": {
+    "unmapped": 2
+   },
+   "by_verdict": {
+    "unknown": 2
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 151391,
+   "has_boxed_warning": false,
+   "problems": []
+  },
+  {
+   "drug": "Ibrutinib",
+   "chembl_id": "CHEMBL1873475",
+   "targets_used": [
+    "BTK"
+   ],
+   "diseases_used": [
+    "BTK deficiency, X-linked agammaglobulinemia"
+   ],
+   "predictions": 37,
+   "by_kind": {
+    "unmapped": 37
+   },
+   "by_verdict": {
+    "unknown": 37
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 80310,
+   "has_boxed_warning": false,
+   "problems": []
+  },
+  {
+   "drug": "Imiquimod",
+   "chembl_id": "CHEMBL1282",
+   "targets_used": [
+    "TLR7"
+   ],
+   "diseases_used": [
+    "TLR7 monogenic lupus"
+   ],
+   "predictions": 23,
+   "by_kind": {
+    "unmapped": 23
+   },
+   "by_verdict": {
+    "unknown": 23
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 2292,
+   "has_boxed_warning": false,
+   "problems": []
+  },
+  {
+   "drug": "Ipilimumab",
+   "chembl_id": "CHEMBL1789844",
+   "targets_used": [
+    "CTLA4"
+   ],
+   "diseases_used": [
+    "CTLA4 haploinsufficiency (ALPS-V)"
+   ],
+   "predictions": 16,
+   "by_kind": {
+    "unmapped": 16
+   },
+   "by_verdict": {
+    "unknown": 16
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 42912,
+   "has_boxed_warning": false,
+   "problems": []
+  },
+  {
+   "drug": "Iptacopan",
+   "chembl_id": "CHEMBL4594448",
+   "targets_used": [
+    "CFB"
+   ],
+   "diseases_used": [
+    "Factor B deficiency"
+   ],
+   "predictions": 0,
+   "by_kind": {},
+   "by_verdict": {},
+   "excluded_developmental": 0,
+   "drug_reports": 730,
+   "has_boxed_warning": true,
+   "problems": []
+  },
+  {
+   "drug": "Momelotinib",
+   "chembl_id": "CHEMBL1078178",
+   "targets_used": [
+    "JAK1"
+   ],
+   "diseases_used": [
+    "JAK1 deficiency"
+   ],
+   "predictions": 0,
+   "by_kind": {},
+   "by_verdict": {},
+   "excluded_developmental": 0,
+   "drug_reports": 1339,
+   "has_boxed_warning": false,
+   "problems": []
+  },
+  {
+   "drug": "Nivolumab",
+   "chembl_id": "CHEMBL2108738",
+   "targets_used": [
+    "PDCD1"
+   ],
+   "diseases_used": [
+    "PD-1 deficiency"
+   ],
+   "predictions": 18,
+   "by_kind": {
+    "unmapped": 18
+   },
+   "by_verdict": {
+    "unknown": 18
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 96645,
+   "has_boxed_warning": false,
+   "problems": []
+  },
+  {
+   "drug": "Pacritinib",
+   "chembl_id": "CHEMBL2035187",
+   "targets_used": [
+    "IRAK1"
+   ],
+   "diseases_used": [
+    "IRAK1 deficiency"
+   ],
+   "predictions": 0,
+   "by_kind": {},
+   "by_verdict": {},
+   "excluded_developmental": 0,
+   "drug_reports": 2964,
+   "has_boxed_warning": false,
+   "problems": []
+  },
+  {
+   "drug": "Pazopanib",
+   "chembl_id": "CHEMBL477772",
+   "targets_used": [
+    "ITK",
+    "LCK"
+   ],
+   "diseases_used": [
+    "LCK deficiency",
+    "ITK deficiency"
+   ],
+   "predictions": 43,
+   "by_kind": {
+    "unmapped": 43
+   },
+   "by_verdict": {
+    "unknown": 43
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 26904,
+   "has_boxed_warning": true,
+   "problems": []
+  },
+  {
+   "drug": "Pegcetacoplan",
+   "chembl_id": "CHEMBL4298211",
+   "targets_used": [
+    "C3"
+   ],
+   "diseases_used": [
+    "C3 deficiency (LOF)"
+   ],
+   "predictions": 6,
+   "by_kind": {
+    "unmapped": 6
+   },
+   "by_verdict": {
+    "unknown": 6
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 1779,
+   "has_boxed_warning": true,
+   "problems": []
+  },
+  {
+   "drug": "Pembrolizumab",
+   "chembl_id": "CHEMBL3137343",
+   "targets_used": [
+    "PDCD1"
+   ],
+   "diseases_used": [
+    "PD-1 deficiency"
+   ],
+   "predictions": 18,
+   "by_kind": {
+    "unmapped": 18
+   },
+   "by_verdict": {
+    "unknown": 18
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 104614,
+   "has_boxed_warning": false,
+   "problems": []
+  },
+  {
+   "drug": "Pentostatin",
+   "chembl_id": "CHEMBL1580",
+   "targets_used": [
+    "ADA"
+   ],
+   "diseases_used": [
+    "ADA deficiency"
+   ],
+   "predictions": 31,
+   "by_kind": {
+    "unmapped": 31
+   },
+   "by_verdict": {
+    "unknown": 31
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 1048,
+   "has_boxed_warning": true,
+   "problems": []
+  },
+  {
+   "drug": "Pirtobrutinib",
+   "chembl_id": "CHEMBL4650485",
+   "targets_used": [
+    "BTK"
+   ],
+   "diseases_used": [
+    "BTK deficiency, X-linked agammaglobulinemia"
+   ],
+   "predictions": 37,
+   "by_kind": {
+    "unmapped": 37
+   },
+   "by_verdict": {
+    "unknown": 37
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 823,
+   "has_boxed_warning": false,
+   "problems": []
+  },
+  {
+   "drug": "Plerixafor",
+   "chembl_id": "CHEMBL18442",
+   "targets_used": [
+    "CXCR4"
+   ],
+   "diseases_used": [
+    "WHIM (warts, hypogammaglobulinemia, infections, myelokathexis) syndrome"
+   ],
+   "predictions": 13,
+   "by_kind": {
+    "unmapped": 13
+   },
+   "by_verdict": {
+    "unknown": 13
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 1464,
+   "has_boxed_warning": false,
+   "problems": []
+  },
+  {
+   "drug": "Pozelimab",
+   "chembl_id": "CHEMBL4298086",
+   "targets_used": [
+    "C5"
+   ],
+   "diseases_used": [
+    "C5 deficiency"
+   ],
+   "predictions": 3,
+   "by_kind": {
+    "unmapped": 3
+   },
+   "by_verdict": {
+    "unknown": 3
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 4,
+   "has_boxed_warning": true,
+   "problems": []
+  },
+  {
+   "drug": "Ravulizumab",
+   "chembl_id": "CHEMBL3989986",
+   "targets_used": [
+    "C5"
+   ],
+   "diseases_used": [
+    "C5 deficiency"
+   ],
+   "predictions": 3,
+   "by_kind": {
+    "unmapped": 3
+   },
+   "by_verdict": {
+    "unknown": 3
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 13435,
+   "has_boxed_warning": true,
+   "problems": []
+  },
+  {
+   "drug": "Ritlecitinib",
+   "chembl_id": "CHEMBL4085457",
+   "targets_used": [
+    "JAK3"
+   ],
+   "diseases_used": [
+    "JAK3 deficiency"
+   ],
+   "predictions": 19,
+   "by_kind": {
+    "unmapped": 19
+   },
+   "by_verdict": {
+    "unknown": 19
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 1862,
+   "has_boxed_warning": true,
+   "problems": []
+  },
+  {
+   "drug": "Ruxolitinib",
+   "chembl_id": "CHEMBL1789941",
+   "targets_used": [
+    "JAK1",
+    "JAK3",
+    "TYK2"
+   ],
+   "diseases_used": [
+    "JAK1 deficiency",
+    "JAK3 deficiency",
+    "TYK2 deficiency"
+   ],
+   "predictions": 19,
+   "by_kind": {
+    "unmapped": 19
+   },
+   "by_verdict": {
+    "unknown": 19
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 71241,
+   "has_boxed_warning": false,
+   "problems": []
+  },
+  {
+   "drug": "Sarilumab",
+   "chembl_id": "CHEMBL2108730",
+   "targets_used": [
+    "IL6R"
+   ],
+   "diseases_used": [
+    "IL-6 receptor deficiency"
+   ],
+   "predictions": 6,
+   "by_kind": {
+    "unmapped": 6
+   },
+   "by_verdict": {
+    "unknown": 6
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 26260,
+   "has_boxed_warning": true,
+   "problems": []
+  },
+  {
+   "drug": "Sutimlimab",
+   "chembl_id": "CHEMBL4297832",
+   "targets_used": [
+    "C1S"
+   ],
+   "diseases_used": [
+    "C1s deficiency"
+   ],
+   "predictions": 0,
+   "by_kind": {},
+   "by_verdict": {},
+   "excluded_developmental": 0,
+   "drug_reports": 311,
+   "has_boxed_warning": false,
+   "problems": []
+  },
+  {
+   "drug": "Tocilizumab",
+   "chembl_id": "CHEMBL1237022",
+   "targets_used": [
+    "IL6R"
+   ],
+   "diseases_used": [
+    "IL-6 receptor deficiency"
+   ],
+   "predictions": 6,
+   "by_kind": {
+    "unmapped": 6
+   },
+   "by_verdict": {
+    "unknown": 6
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 113810,
+   "has_boxed_warning": true,
+   "problems": []
+  },
+  {
+   "drug": "Toripalimab",
+   "chembl_id": "CHEMBL4297843",
+   "targets_used": [
+    "PDCD1"
+   ],
+   "diseases_used": [
+    "PD-1 deficiency"
+   ],
+   "predictions": 18,
+   "by_kind": {
+    "unmapped": 18
+   },
+   "by_verdict": {
+    "unknown": 18
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 15,
+   "has_boxed_warning": false,
+   "problems": []
+  },
+  {
+   "drug": "Tremelimumab",
+   "chembl_id": "CHEMBL2108658",
+   "targets_used": [
+    "CTLA4"
+   ],
+   "diseases_used": [
+    "CTLA4 haploinsufficiency (ALPS-V)"
+   ],
+   "predictions": 16,
+   "by_kind": {
+    "unmapped": 16
+   },
+   "by_verdict": {
+    "unknown": 16
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 4216,
+   "has_boxed_warning": false,
+   "problems": []
+  },
+  {
+   "drug": "Upadacitinib",
+   "chembl_id": "CHEMBL3622821",
+   "targets_used": [
+    "JAK1",
+    "JAK3",
+    "TYK2"
+   ],
+   "diseases_used": [
+    "TYK2 deficiency",
+    "JAK3 deficiency",
+    "JAK1 deficiency"
+   ],
+   "predictions": 19,
+   "by_kind": {
+    "unmapped": 19
+   },
+   "by_verdict": {
+    "unknown": 19
+   },
+   "excluded_developmental": 0,
+   "drug_reports": 81041,
+   "has_boxed_warning": true,
+   "problems": []
+  }
+ ],
+ "mapping_review": {
+  "status": "not_drawn",
+  "reason": "benchmark/results/mapping_review.csv does not exist yet"
+ },
+ "checks": {
+  "drug_set_targets_match_engine": []
+ },
+ "measures": {
+  "label_precision": {
+   "status": "blocked",
+   "reason": "scoring is blocked on step 5: GEMINI_API_KEY is not set in .env, so none of the 525 predictions has a kind or reaction terms, and no label or report check could run"
+  },
+  "report_precision": {
+   "status": "blocked",
+   "reason": "scoring is blocked on step 5: GEMINI_API_KEY is not set in .env, so none of the 525 predictions has a kind or reaction terms, and no label or report check could run"
+  },
+  "label_precision_lift": {
+   "status": "blocked",
+   "reason": "scoring is blocked on step 5: GEMINI_API_KEY is not set in .env, so none of the 525 predictions has a kind or reaction terms, and no label or report check could run"
+  },
+  "report_precision_lift": {
+   "status": "blocked",
+   "reason": "scoring is blocked on step 5: GEMINI_API_KEY is not set in .env, so none of the 525 predictions has a kind or reaction terms, and no label or report check could run"
+  },
+  "boxed_warning_recall": {
+   "status": "blocked",
+   "reason": "scoring is blocked on step 5: GEMINI_API_KEY is not set in .env, so none of the 525 predictions has a kind or reaction terms, and no label or report check could run"
+  },
+  "candidate_new_signals": {
+   "status": "blocked",
+   "reason": "scoring is blocked on step 5: GEMINI_API_KEY is not set in .env, so none of the 525 predictions has a kind or reaction terms, and no label or report check could run"
+  }
+ },
+ "misses": {
+  "status": "blocked",
+  "reason": "scoring is blocked on step 5: GEMINI_API_KEY is not set in .env, so none of the 525 predictions has a kind or reaction terms, and no label or report check could run"
+ },
+ "openfda_network_calls": 0
+}
