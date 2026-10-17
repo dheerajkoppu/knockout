@@ -57,20 +57,22 @@ only those, so the README carries a "Built at LA Hacks" section listing what is 
    file is already cached at `data/.cache/orphadata_product6/en_product6.xml` in the Helix checkout.
    It resolves 10 of the 137 diseases Helix currently leaves unknown, including cystic fibrosis
    and APDS.
-4. **Diseases to predicted effects.** Each disease phenotype with Orphanet frequency "Very
-   frequent" or "Frequent". Drop developmental and congenital phenotypes, because a drug given to
-   an adult cannot cause a birth defect it was never present for. Gemini tags each HPO term
-   developmental or acquired once; the tag list is committed before any scoring.
-5. **Effects to reaction terms.** Gemini maps each HPO term to the FAERS reaction vocabulary
-   (MedDRA preferred terms). The vocabulary is fixed: the 1,000 most-reported reaction terms across
-   all of FAERS, fetched once with no drug filter, so the mapping cannot see the drug's own reports.
+4. **Diseases to predicted effects.** Each disease phenotype that is Obligate, Very frequent or
+   Frequent, or seen in at least 30% of reported cases. Drop developmental phenotypes, because a drug
+   given after birth cannot cause them. Gemini tags each HPO term clinical, laboratory or
+   developmental once; the tags are committed before any scoring.
+5. **Effects to reaction terms.** Gemini maps each HPO term to up to five FAERS reaction terms
+   (MedDRA preferred terms) in the same pass. The prompt never names a drug. A term is kept only if
+   FAERS has at least one report with it across all drugs. Mappings are committed to
+   `data/mappings/hpo.json` and scored runs read only that file.
 6. **Check against the label.** openFDA label sections `boxed_warning`, `warnings_and_cautions`,
-   `adverse_reactions`. Gemini returns the sentence that mentions the reaction, and the code checks
-   that the sentence appears verbatim in the label. A quote that does not appear is discarded.
+   `warnings`, `precautions`, `adverse_reactions`. A prediction is on the label when a sentence
+   contains one of its reaction terms as a whole phrase, ignoring case and a plural ending. The
+   sentence is kept verbatim. No model takes part in this step.
 7. **Check against reports.** FAERS counts through openFDA. A signal is PRR ≥ 2 with at least 3
    reports and chi-squared ≥ 4 (the Evans criteria). Counts are stored per quarter for trends.
 8. **Verdict per predicted effect.** One of four: `on_label`, `signal_in_reports`, `no_signal`,
-   `unknown` (fewer than 3 reports of the drug with any reaction in the group, or the API failed).
+   `unknown` (even a doubled reporting rate could not reach 3 reports, or a source failed).
    `unknown` is never shown as safe. A prediction with a report signal and no label mention is a
    **candidate new signal**, shown with its genetic reason and the caveats below.
 
@@ -148,7 +150,7 @@ All on Agentverse, Chat Protocol on the orchestrator, README badges `innovationl
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
 | Sentry                  | Python SDK with Tracing and Logs on the API and agents, AI agent monitoring on Gemini calls, Session Replay on the web page. Keep one screenshot of a trace that found a slow openFDA call and the cache added for it | Ops    |
 | Tiger Data (MLH)        | The storage above                                                                                                                                                                                                     | Engine |
-| Gemini API (MLH)        | Steps 4 to 6                                                                                                                                                                                                          | Engine |
+| Gemini API (MLH)        | Steps 4 and 5                                                                                                                                                                                                          | Engine |
 | Vultr (MLH)             | One VM running the API and agents with Docker Compose                                                                                                                                                                 | Ops    |
 | GoDaddy Registry (MLH)  | Register the domain                                                                                                                                                                                                   | Design |
 | Devin                   | Three bounded tasks: the openFDA client with caching and tests, the Tiger Data migrations, the benchmark report renderer. Keep the session links                                                                      | Design |

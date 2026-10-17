@@ -130,7 +130,7 @@ output.
 | Cognition: Best Use of Devin      | Three components built by Devin, sessions linked above                                  |
 | Sentry                            | Tracing, Logs, AI agent monitoring and Session Replay; _fill in: the fix a trace found_ |
 | MLH: Tiger Data                   | Reports as a time series, continuous aggregates, the evidence trigger                   |
-| MLH: Gemini API                   | Symptom-to-reaction mapping and label quotes                                            |
+| MLH: Gemini API                   | Classifying phenotypes and mapping them to reaction terms                                            |
 | MLH: Vultr                        | Hosts the API and agents                                                                |
 | MLH: GoDaddy Registry             | _fill in: domain_                                                                       |
 
