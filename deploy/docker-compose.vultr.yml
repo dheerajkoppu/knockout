@@ -1,0 +1,106 @@
+# Knockout on one Vultr Cloud Compute instance. Run from the repository root:
+#   docker compose --env-file .env -f deploy/docker-compose.vultr.yml up -d --build
+# Profiles (COMPOSE_PROFILES in .env): "db" adds a local TimescaleDB, "https" adds Caddy for KNOCKOUT_DOMAIN.
+# Paths below are relative to this folder (deploy/).
+
+name: knockout-vultr
+
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    image: knockout-api:latest
+    env_file:
+      - path: ../.env
+        required: false
+    environment:
+      SENTRY_ENVIRONMENT: ${SENTRY_ENVIRONMENT:-production}
+      SENTRY_RELEASE: ${SENTRY_RELEASE:-}
+    ports:
+      # Set API_BIND=127.0.0.1 when Caddy serves HTTPS, so port 8000 is not public
+      - "${API_BIND:-0.0.0.0}:${API_PORT:-8000}:8000"
+    volumes:
+      - api-cache:/app/data/cache
+      - api-store:/app/data/store
+      - api-reports:/app/data/reports
+    depends_on:
+      timescaledb:
+        condition: service_healthy
+        required: false
+    restart: unless-stopped
+    logging: &logging
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  agents:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.agents
+    image: knockout-agents:latest
+    env_file:
+      - path: ../.env
+        required: false
+    environment:
+      KNOCKOUT_API_URL: http://api:8000
+      SENTRY_ENVIRONMENT: ${SENTRY_ENVIRONMENT:-production}
+    # Mailbox mode needs no inbound port: the agents poll Agentverse
+    volumes:
+      - agents-data:/var/lib/knockout-agents
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+    logging: *logging
+
+  timescaledb:
+    profiles: ["db"]
+    image: timescale/timescaledb:2.30.2-pg17
+    environment:
+      POSTGRES_USER: knockout
+      POSTGRES_DB: knockout
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-}
+    # No published port: only the api container reaches it, at timescaledb:5432
+    volumes:
+      - timescale-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U knockout -d knockout"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+    logging: *logging
+
+  caddy:
+    profiles: ["https"]
+    image: caddy:2.11.4-alpine
+    environment:
+      KNOCKOUT_DOMAIN: ${KNOCKOUT_DOMAIN:-}
+    command:
+      - sh
+      - -c
+      - test -n "$$KNOCKOUT_DOMAIN" || { echo "KNOCKOUT_DOMAIN is empty; set it in .env and pass --env-file .env"; exit 1; };
+        exec caddy run --config /etc/caddy/Caddyfile --adapter caddyfile
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on:
+      - api
+    restart: unless-stopped
+    logging: *logging
+
+volumes:
+  api-cache:
+  api-store:
+  api-reports:
+  agents-data:
+  timescale-data:
+  caddy-data:
+  caddy-config:

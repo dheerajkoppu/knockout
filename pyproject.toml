@@ -12,9 +12,16 @@ requires-python = ">=3.14"
 dependencies = [
   "helix @ git+https://github.com/dheerajkoppu/helix@97f3704#subdirectory=api",
   "httpx>=0.28",
+  "python-dotenv>=1.0",
 ]
 
 [project.optional-dependencies]
+api = [
+  "fastapi>=0.142",
+  "uvicorn[standard]>=0.54",
+  "sentry-sdk[fastapi]>=2.40",
+  "psycopg[binary]>=3.2",
+]
 dev = ["pytest>=8.4", "ruff>=0.16"]
 
 [project.scripts]
@@ -27,5 +34,5 @@ where = ["src"]
 line-length = 110
 
 [tool.pytest.ini_options]
-testpaths = ["tests"]
+testpaths = ["tests", "creao/tests"]
 markers = ["live: calls ChEMBL and openFDA"]

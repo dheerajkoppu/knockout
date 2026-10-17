@@ -1,0 +1,6 @@
+# HTTPS in front of the API. Caddy obtains and renews the certificate for KNOCKOUT_DOMAIN,
+# which must already resolve to this server with ports 80 and 443 open.
+{$KNOCKOUT_DOMAIN} {
+	encode zstd gzip
+	reverse_proxy api:8000
+}

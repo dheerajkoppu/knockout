@@ -1,0 +1,26 @@
+# syntax=docker/dockerfile:1.7
+# Fetch.ai agents (uAgents, Python 3.12). Build from the repository root:
+#   docker build -f deploy/Dockerfile.agents -t knockout-agents .
+# The agents reach the API over HTTP at KNOCKOUT_API_URL; they do not import the engine.
+
+FROM python:3.12.15-slim-trixie
+
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1 \
+    PYTHONPATH=/app/agents
+
+RUN useradd --create-home --uid 10001 knockout
+
+COPY agents/requirements.txt /app/agents/requirements.txt
+RUN --mount=type=cache,target=/root/.cache/pip \
+    pip install --requirement /app/agents/requirements.txt
+
+COPY agents/ /app/agents/
+
+# uAgents keeps each agent's storage file in the working directory, so it lives on a volume
+RUN mkdir -p /var/lib/knockout-agents && chown knockout:knockout /var/lib/knockout-agents
+WORKDIR /var/lib/knockout-agents
+USER knockout
+
+CMD ["python", "-m", "knockout_agents.run"]

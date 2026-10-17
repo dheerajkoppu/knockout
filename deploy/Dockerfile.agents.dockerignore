@@ -1,0 +1,11 @@
+*
+!agents/
+agents/.venv
+agents/.env
+agents/.env.*
+!agents/.env.example
+agents/**/__pycache__
+agents/**/*.py[cod]
+agents/**/*_data.json
+agents/.pytest_cache
+agents/.ruff_cache

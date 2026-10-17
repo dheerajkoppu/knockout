@@ -8,3 +8,4 @@ data/cache/
 .pytest_cache/
 .ruff_cache/
 data/reports/
+data/store/
