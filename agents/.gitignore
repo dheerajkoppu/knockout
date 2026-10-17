@@ -1,0 +1,8 @@
+.env
+.venv/
+# uAgents keeps each agent's storage here when run from this folder
+*_data.json
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.cache/

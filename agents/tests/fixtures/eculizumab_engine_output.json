@@ -1,0 +1,253 @@
+{
+ "query": "eculizumab",
+ "generated_at": "2026-10-17T20:46:30+00:00",
+ "molecule": {
+  "chembl_id": "CHEMBL1201828",
+  "name": "Eculizumab",
+  "max_phase": 4.0,
+  "molecule_type": "Antibody",
+  "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1201828"
+ },
+ "targets": [
+  {
+   "chembl_id": "CHEMBL2364163",
+   "name": "Complement C5",
+   "accession": "P01031",
+   "effect": "lowers",
+   "action_types": [
+    "INHIBITOR"
+   ],
+   "gene": "C5",
+   "used": true,
+   "reason": null
+  }
+ ],
+ "diseases": [
+  {
+   "disease_id": "c5-deficiency",
+   "name": "C5 deficiency",
+   "gene": "C5",
+   "direction": "decreased_activity",
+   "direction_source": "disease_name",
+   "direction_basis": "No catalog record states a mechanism class for C5. The IUIS disease label says \"deficiency\", which states that the protein does too little.",
+   "pairing": "use",
+   "phenotypes_used": 3
+  }
+ ],
+ "predictions": [
+  {
+   "hpo_id": "HP:0033060",
+   "phenotype": "Decreased circulating complement C5 concentration",
+   "frequency": "2/2",
+   "kind": null,
+   "gene": "C5",
+   "target": "Complement C5",
+   "disease_id": "c5-deficiency",
+   "disease": "C5 deficiency",
+   "reaction_terms": [],
+   "label_section": null,
+   "label_term": null,
+   "label_sentence": null,
+   "counts": [],
+   "verdict": "unknown",
+   "reason": "phenotype not mapped yet (step 5)",
+   "candidate_new_signal": false,
+   "records": [
+    {
+     "source": "chembl",
+     "description": "Eculizumab: INHIBITOR of Complement C5",
+     "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL2364163"
+    },
+    {
+     "source": "iuis_2024",
+     "description": "Catalog record Table 8 row 12",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl8/"
+    },
+    {
+     "source": "mondo",
+     "description": "Catalog record MONDO:0012295",
+     "url": "https://monarchinitiative.org/MONDO:0012295"
+    },
+    {
+     "source": "mondo_sssom_omim",
+     "description": "Catalog record MONDO:0012295 exactMatch OMIM:609536",
+     "url": "https://monarchinitiative.org/MONDO:0012295"
+    },
+    {
+     "source": "gencc",
+     "description": "Catalog record HGNC:1331 MONDO:0012295",
+     "url": "https://search.thegencc.org/genes/HGNC:1331"
+    },
+    {
+     "source": "hpo_annotations",
+     "description": "Catalog record OMIM:609536",
+     "url": "https://ontology.jax.org/api/network/annotation/OMIM:609536"
+    },
+    {
+     "source": "hpo_ontology",
+     "description": "Catalog record HP:0000007",
+     "url": "http://purl.obolibrary.org/obo/HP_0000007"
+    },
+    {
+     "source": "disease_name",
+     "description": "No catalog record states a mechanism class for C5. The IUIS disease label says \"deficiency\", which states that the protein does too little.",
+     "url": null
+    },
+    {
+     "source": "hpo_annotations",
+     "description": "Decreased circulating complement C5 concentration (2/2)",
+     "url": "https://hpo.jax.org/browse/term/HP:0033060"
+    }
+   ]
+  },
+  {
+   "hpo_id": "HP:0005381",
+   "phenotype": "Recurrent Neisseria meningitidis infection",
+   "frequency": "2/2",
+   "kind": null,
+   "gene": "C5",
+   "target": "Complement C5",
+   "disease_id": "c5-deficiency",
+   "disease": "C5 deficiency",
+   "reaction_terms": [],
+   "label_section": null,
+   "label_term": null,
+   "label_sentence": null,
+   "counts": [],
+   "verdict": "unknown",
+   "reason": "phenotype not mapped yet (step 5)",
+   "candidate_new_signal": false,
+   "records": [
+    {
+     "source": "chembl",
+     "description": "Eculizumab: INHIBITOR of Complement C5",
+     "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL2364163"
+    },
+    {
+     "source": "iuis_2024",
+     "description": "Catalog record Table 8 row 12",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl8/"
+    },
+    {
+     "source": "mondo",
+     "description": "Catalog record MONDO:0012295",
+     "url": "https://monarchinitiative.org/MONDO:0012295"
+    },
+    {
+     "source": "mondo_sssom_omim",
+     "description": "Catalog record MONDO:0012295 exactMatch OMIM:609536",
+     "url": "https://monarchinitiative.org/MONDO:0012295"
+    },
+    {
+     "source": "gencc",
+     "description": "Catalog record HGNC:1331 MONDO:0012295",
+     "url": "https://search.thegencc.org/genes/HGNC:1331"
+    },
+    {
+     "source": "hpo_annotations",
+     "description": "Catalog record OMIM:609536",
+     "url": "https://ontology.jax.org/api/network/annotation/OMIM:609536"
+    },
+    {
+     "source": "hpo_ontology",
+     "description": "Catalog record HP:0000007",
+     "url": "http://purl.obolibrary.org/obo/HP_0000007"
+    },
+    {
+     "source": "disease_name",
+     "description": "No catalog record states a mechanism class for C5. The IUIS disease label says \"deficiency\", which states that the protein does too little.",
+     "url": null
+    },
+    {
+     "source": "hpo_annotations",
+     "description": "Recurrent Neisseria meningitidis infection (2/2)",
+     "url": "https://hpo.jax.org/browse/term/HP:0005381"
+    }
+   ]
+  },
+  {
+   "hpo_id": "HP:0025434",
+   "phenotype": "Reduced circulating CH50 activity",
+   "frequency": "2/2",
+   "kind": null,
+   "gene": "C5",
+   "target": "Complement C5",
+   "disease_id": "c5-deficiency",
+   "disease": "C5 deficiency",
+   "reaction_terms": [],
+   "label_section": null,
+   "label_term": null,
+   "label_sentence": null,
+   "counts": [],
+   "verdict": "unknown",
+   "reason": "phenotype not mapped yet (step 5)",
+   "candidate_new_signal": false,
+   "records": [
+    {
+     "source": "chembl",
+     "description": "Eculizumab: INHIBITOR of Complement C5",
+     "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL2364163"
+    },
+    {
+     "source": "iuis_2024",
+     "description": "Catalog record Table 8 row 12",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl8/"
+    },
+    {
+     "source": "mondo",
+     "description": "Catalog record MONDO:0012295",
+     "url": "https://monarchinitiative.org/MONDO:0012295"
+    },
+    {
+     "source": "mondo_sssom_omim",
+     "description": "Catalog record MONDO:0012295 exactMatch OMIM:609536",
+     "url": "https://monarchinitiative.org/MONDO:0012295"
+    },
+    {
+     "source": "gencc",
+     "description": "Catalog record HGNC:1331 MONDO:0012295",
+     "url": "https://search.thegencc.org/genes/HGNC:1331"
+    },
+    {
+     "source": "hpo_annotations",
+     "description": "Catalog record OMIM:609536",
+     "url": "https://ontology.jax.org/api/network/annotation/OMIM:609536"
+    },
+    {
+     "source": "hpo_ontology",
+     "description": "Catalog record HP:0000007",
+     "url": "http://purl.obolibrary.org/obo/HP_0000007"
+    },
+    {
+     "source": "disease_name",
+     "description": "No catalog record states a mechanism class for C5. The IUIS disease label says \"deficiency\", which states that the protein does too little.",
+     "url": null
+    },
+    {
+     "source": "hpo_annotations",
+     "description": "Reduced circulating CH50 activity (2/2)",
+     "url": "https://hpo.jax.org/browse/term/HP:0025434"
+    }
+   ]
+  }
+ ],
+ "excluded_developmental": [],
+ "label": {
+  "set_id": "ebcd67fa-b4d1-4a22-b33d-ee8bf6b9c722",
+  "effective_time": "20260708",
+  "generic_names": [
+   "ECULIZUMAB"
+  ],
+  "sections": [
+   "boxed_warning",
+   "warnings_and_cautions",
+   "adverse_reactions"
+  ],
+  "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=ebcd67fa-b4d1-4a22-b33d-ee8bf6b9c722"
+ },
+ "drug_reports": 54046,
+ "all_reports": 20692690,
+ "problems": [
+  "Step 5 could not map new phenotypes: GEMINI_API_KEY is not set in .env"
+ ]
+}
