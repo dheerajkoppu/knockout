@@ -175,16 +175,16 @@ A prediction found in the reports but not on the label
 becomes a candidate new signal, shown with its caveats.
 
 45
-00:02:24,600 --> 00:02:27,529
+00:02:24,600 --> 00:02:27,425
 Reports keep arriving, so a Creao watch agent
 
 46
-00:02:27,329 --> 00:02:29,834
+00:02:27,225 --> 00:02:29,641
 re-counts each watched drug by quarter
 
 47
-00:02:29,634 --> 00:02:31,471
-and posts the changes back.
+00:02:29,441 --> 00:02:31,216
+and re-checks every signal.
 
 48
 00:02:32,000 --> 00:02:35,926
