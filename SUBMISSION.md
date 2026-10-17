@@ -28,8 +28,7 @@ in one local process, and the watch script posting to the local API. 122 Python 
 skip without a database), 22 agent tests pass.
 
 Blocked: `GEMINI_API_KEY` is not set, so step 5 has not run and every prediction is `unknown`.
-Nothing is committed since `20ebd86`, so `creao/watch.py` is not on GitHub yet (its raw URL returns
-404). Nothing is deployed. No account work (Agentverse, Creao, Tiger Cloud, Sentry, Vultr, Vercel,
+Everything is pushed to `main`, and the raw `creao/watch.py` URL returns 200 (checked Sat 16:55). Nothing is deployed. No account work (Agentverse, Creao, Tiger Cloud, Sentry, Vultr, Vercel,
 Paper, Devin, GoDaddy) is done.
 
 ## Overview
@@ -39,7 +38,7 @@ Paper, Devin, GoDaddy) is done.
 | 1   | Sat 15:00 | A     | Gemini and openFDA keys in `.env`                     | `/api/health` shows `gemini_key: true`, `openfda_key: true`                                |
 | 2   | Sat 15:30 | A     | Step 5 on eculizumab, ibrutinib, ruxolitinib          | `knockout predict eculizumab` lists reaction terms for HP:0005381                          |
 | 3   | Sat 16:00 | A     | Webhook secret chosen                                 | `KNOCKOUT_WEBHOOK_SECRET` in the root `.env`                                               |
-| 4   | Sat 16:30 | A     | First commit and push                                 | `creao/watch.py` raw URL returns 200                                                       |
+| 4   | Sat 16:30 | A     | First commit and push (done)                          | `creao/watch.py` raw URL returns 200                                                       |
 | 5   | Sat 17:00 | A     | Tiger Cloud service                                   | `/api/health` shows `store: postgres` against Tiger Cloud; trigger demo refuses the insert |
 | 6   | Sat 18:00 | C     | Vultr instance with HTTPS                             | `curl https://<api>/api/health` answers from a laptop                                      |
 | 7   | Sat 18:30 | D     | GoDaddy Registry domain                               | `dig +short api.<domain>` prints the Vultr IP                                              |
