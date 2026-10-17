@@ -1,0 +1,23 @@
+{
+  "name": "knockout-demo",
+  "endAfterLastCue": 4.4,
+  "render": {
+    "fps": 30,
+    "scale": 1,
+    "workers": 8,
+    "crf": 17,
+    "preset": "slow"
+  },
+  "music": {
+    "file": "audio/music-a.wav",
+    "drop": 0,
+    "alignTo": 0
+  },
+  "presenter": {
+    "windowCrop": "960:960:480:20",
+    "wideCrop": "1260:1080:330:0",
+    "grade": "",
+    "wide": {}
+  },
+  "duration": 180
+}

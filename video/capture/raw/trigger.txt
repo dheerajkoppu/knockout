@@ -1,0 +1,18 @@
+1. A prediction inserted on its own fails at commit:
+BEGIN
+INSERT 0 1
+INSERT 0 1
+psql:/tmp/demo.sql:11: ERROR:  prediction 143 (HP:0000001 Demo phenotype, from Demo disease) for trigger-demo has no evidence row
+HINT:  No prediction without its cited chain: insert its evidence in the same transaction.
+CONTEXT:  PL/pgSQL function knockout_prediction_needs_evidence() line 5 at RAISE
+2. The same prediction with an evidence row in the same transaction is accepted (then rolled back):
+BEGIN
+INSERT 0 1
+INSERT 0 1
+SET CONSTRAINTS
+ predictions_with_evidence 
+---------------------------
+                         1
+(1 row)
+
+ROLLBACK

@@ -1,0 +1,227 @@
+2026-10-17T23:26:52Z
+run manual-20261017T232652Z-fc2a70: 1 drug(s), quarters 2024Q3 to 2026Q2
+eculizumab: 1 term(s) as 'eculizumab'
+{
+  "run_id": "manual-20261017T232652Z-fc2a70",
+  "run_at": "2026-10-17T23:26:52+00:00",
+  "dry_run": true,
+  "openfda_last_updated": "2026-07-30",
+  "openfda_key": false,
+  "quarters": [
+    "2024Q3",
+    "2024Q4",
+    "2025Q1",
+    "2025Q2",
+    "2025Q3",
+    "2025Q4",
+    "2026Q1",
+    "2026Q2"
+  ],
+  "term_source": "manual",
+  "drugs": [
+    {
+      "drug": "eculizumab",
+      "generic_name": "eculizumab",
+      "terms": [
+        "MENINGOCOCCAL INFECTION"
+      ],
+      "latest_quarter": "2026Q2",
+      "rows": [
+        {
+          "term": "MENINGOCOCCAL INFECTION",
+          "quarter": "2024Q3",
+          "reports": 0,
+          "prr": 157.58936504814085,
+          "prr_infinite": false,
+          "signal": true,
+          "a": 80,
+          "drug_reports": 50286,
+          "reaction_reports": 265,
+          "all_reports": 18375782,
+          "chi_squared": 8580.73
+        },
+        {
+          "term": "MENINGOCOCCAL INFECTION",
+          "quarter": "2024Q4",
+          "reports": 1,
+          "prr": 157.34626540971718,
+          "prr_infinite": false,
+          "signal": true,
+          "a": 81,
+          "drug_reports": 50826,
+          "reaction_reports": 270,
+          "all_reports": 18711149,
+          "chi_squared": 8699.22
+        },
+        {
+          "term": "MENINGOCOCCAL INFECTION",
+          "quarter": "2025Q1",
+          "reports": 0,
+          "prr": 153.77362860211312,
+          "prr_infinite": false,
+          "signal": true,
+          "a": 81,
+          "drug_reports": 51284,
+          "reaction_reports": 276,
+          "all_reports": 19036404,
+          "chi_squared": 8578.35
+        },
+        {
+          "term": "MENINGOCOCCAL INFECTION",
+          "quarter": "2025Q2",
+          "reports": 2,
+          "prr": 154.84699930432095,
+          "prr_infinite": false,
+          "signal": true,
+          "a": 83,
+          "drug_reports": 51748,
+          "reaction_reports": 283,
+          "all_reports": 19360236,
+          "chi_squared": 8857.41
+        },
+        {
+          "term": "MENINGOCOCCAL INFECTION",
+          "quarter": "2025Q3",
+          "reports": 1,
+          "prr": 154.10335278315458,
+          "prr_infinite": false,
+          "signal": true,
+          "a": 84,
+          "drug_reports": 52242,
+          "reaction_reports": 289,
+          "all_reports": 19699704,
+          "chi_squared": 8955.0
+        },
+        {
+          "term": "MENINGOCOCCAL INFECTION",
+          "quarter": "2025Q4",
+          "reports": 0,
+          "prr": 151.13792816320353,
+          "prr_infinite": false,
+          "signal": true,
+          "a": 84,
+          "drug_reports": 52842,
+          "reaction_reports": 294,
+          "all_reports": 20018918,
+          "chi_squared": 8841.6
+        },
+        {
+          "term": "MENINGOCOCCAL INFECTION",
+          "quarter": "2026Q1",
+          "reports": 2,
+          "prr": 151.36778537814428,
+          "prr_infinite": false,
+          "signal": true,
+          "a": 86,
+          "drug_reports": 53360,
+          "reaction_reports": 302,
+          "all_reports": 20339741,
+          "chi_squared": 9080.63
+        },
+        {
+          "term": "MENINGOCOCCAL INFECTION",
+          "quarter": "2026Q2",
+          "reports": 0,
+          "prr": 145.95989293071335,
+          "prr_infinite": false,
+          "signal": true,
+          "a": 86,
+          "drug_reports": 54046,
+          "reaction_reports": 311,
+          "all_reports": 20692690,
+          "chi_squared": 8852.71
+        }
+      ],
+      "signals_in_latest_quarter": [
+        {
+          "term": "MENINGOCOCCAL INFECTION",
+          "quarter": "2026Q2",
+          "reports": 0,
+          "prr": 145.95989293071335,
+          "prr_infinite": false,
+          "signal": true,
+          "a": 86,
+          "drug_reports": 54046,
+          "reaction_reports": 311,
+          "all_reports": 20692690,
+          "chi_squared": 8852.71
+        }
+      ],
+      "status": "dry_run",
+      "payload": {
+        "drug": "eculizumab",
+        "run_id": "manual-20261017T232652Z-fc2a70",
+        "run_at": "2026-10-17T23:26:52+00:00",
+        "term_source": "manual",
+        "terms": [
+          {
+            "term": "MENINGOCOCCAL INFECTION",
+            "quarter": "2024Q3",
+            "reports": 0,
+            "prr": 157.58936504814085,
+            "prr_infinite": false,
+            "signal": true
+          },
+          {
+            "term": "MENINGOCOCCAL INFECTION",
+            "quarter": "2024Q4",
+            "reports": 1,
+            "prr": 157.34626540971718,
+            "prr_infinite": false,
+            "signal": true
+          },
+          {
+            "term": "MENINGOCOCCAL INFECTION",
+            "quarter": "2025Q1",
+            "reports": 0,
+            "prr": 153.77362860211312,
+            "prr_infinite": false,
+            "signal": true
+          },
+          {
+            "term": "MENINGOCOCCAL INFECTION",
+            "quarter": "2025Q2",
+            "reports": 2,
+            "prr": 154.84699930432095,
+            "prr_infinite": false,
+            "signal": true
+          },
+          {
+            "term": "MENINGOCOCCAL INFECTION",
+            "quarter": "2025Q3",
+            "reports": 1,
+            "prr": 154.10335278315458,
+            "prr_infinite": false,
+            "signal": true
+          },
+          {
+            "term": "MENINGOCOCCAL INFECTION",
+            "quarter": "2025Q4",
+            "reports": 0,
+            "prr": 151.13792816320353,
+            "prr_infinite": false,
+            "signal": true
+          },
+          {
+            "term": "MENINGOCOCCAL INFECTION",
+            "quarter": "2026Q1",
+            "reports": 2,
+            "prr": 151.36778537814428,
+            "prr_infinite": false,
+            "signal": true
+          },
+          {
+            "term": "MENINGOCOCCAL INFECTION",
+            "quarter": "2026Q2",
+            "reports": 0,
+            "prr": 145.95989293071335,
+            "prr_infinite": false,
+            "signal": true
+          }
+        ]
+      }
+    }
+  ],
+  "openfda_requests": 37
+}
+2026-10-17T23:28:10Z

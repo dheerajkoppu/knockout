@@ -1,0 +1,170 @@
+[
+ {
+  "id": "hook-1",
+  "at": 0.7,
+  "text": "People born without a working C5 protein | get meningococcal infections, again and again.",
+  "variant": "only"
+ },
+ {
+  "id": "hook-2",
+  "at": 6.7,
+  "text": "Eculizumab is a drug that blocks C5.",
+  "variant": "only"
+ },
+ {
+  "id": "hook-3",
+  "at": 9.6,
+  "text": "Its label opens with a boxed warning: | *serious meningococcal infections*.",
+  "variant": "only"
+ },
+ {
+  "id": "hook-4",
+  "at": 14.7,
+  "text": "The disease predicted the side effect.",
+  "variant": "only"
+ },
+ {
+  "id": "method-1",
+  "at": 20,
+  "text": "Knockout turns that into a method.",
+  "variant": "only"
+ },
+ {
+  "id": "method-2",
+  "at": 22.4,
+  "text": "A drug that blocks a protein is a *chemical knockout*. | It should cause a milder form of that protein's disease.",
+  "variant": "only"
+ },
+ {
+  "id": "agents-1",
+  "at": 29.2,
+  "text": "Ask it in plain words: | what side effects should a C5 blocker cause?",
+  "variant": "only"
+ },
+ {
+  "id": "agents-2",
+  "at": 34.2,
+  "text": "The Fetch.ai orchestrator finds five approved C5 blockers | and picks eculizumab.",
+  "variant": "only"
+ },
+ {
+  "id": "agents-4",
+  "at": 39.8,
+  "text": "The target agent reads what the drug acts on, | and which way, from ChEMBL.",
+  "variant": "only"
+ },
+ {
+  "id": "agents-5",
+  "at": 45.4,
+  "text": "The genetics agent finds the disease where C5 fails the same way, | and its symptoms.",
+  "variant": "only"
+ },
+ {
+  "id": "agents-6",
+  "at": 51.1,
+  "text": "The label and report agents check each symptom | against the FDA's records.",
+  "variant": "only"
+ },
+ {
+  "id": "agents-7",
+  "at": 56.2,
+  "text": "Today those two answer unknown: | mapping symptoms to report terms needs a Gemini key. | They say which step failed, and never call unknown safe.",
+  "variant": "pending"
+ },
+ {
+  "id": "report-1",
+  "at": 70,
+  "text": "The report page shows the same chain from the live API, | down to three predicted effects.",
+  "variant": "only"
+ },
+ {
+  "id": "report-2",
+  "at": 76.4,
+  "text": "They're not checked yet, | so we checked the meningococcal one by hand with the engine's code, | and show it in the page's fixture.",
+  "variant": "pending"
+ },
+ {
+  "id": "report-3",
+  "at": 84.4,
+  "text": "The boxed warning matches word for word. | 86 of 54,046 eculizumab reports name the infection, | against 311 in 20.7 million.",
+  "variant": "pending"
+ },
+ {
+  "id": "report-4",
+  "at": 95.4,
+  "text": "A proportional reporting ratio of *146*.",
+  "variant": "pending"
+ },
+ {
+  "id": "bench-1",
+  "at": 100.4,
+  "text": "One example proves nothing, | so the measurement was fixed before any scoring.",
+  "variant": "only"
+ },
+ {
+  "id": "bench-2",
+  "at": 105.4,
+  "text": "A script picks the drugs: 52 approved drugs | whose target has a genetic disease pointing the same way.",
+  "variant": "only"
+ },
+ {
+  "id": "bench-3",
+  "at": 112.4,
+  "text": "Label precision comes first, then the lift over 100 shuffled diseases. | Neither is measured yet; | scoring waits on that same mapping step.",
+  "variant": "pending"
+ },
+ {
+  "id": "bench-4",
+  "at": 121.4,
+  "text": "A blank beats a number we didn't measure.",
+  "variant": "pending"
+ },
+ {
+  "id": "signal-1",
+  "at": 126.8,
+  "text": "Every prediction is stored in Tiger Data with its cited chain.",
+  "variant": "pending"
+ },
+ {
+  "id": "signal-2",
+  "at": 131,
+  "text": "A database trigger refuses any prediction | that arrives without its evidence.",
+  "variant": "pending"
+ },
+ {
+  "id": "signal-3",
+  "at": 135.8,
+  "text": "A prediction found in the reports but not on the label | becomes a candidate new signal, shown with its caveats.",
+  "variant": "pending"
+ },
+ {
+  "id": "watch-1",
+  "at": 144.6,
+  "text": "Reports keep arriving, so a Creao watch agent | re-counts each watched drug by quarter | and posts the changes back.",
+  "variant": "only"
+ },
+ {
+  "id": "watch-2",
+  "at": 152,
+  "text": "This run used live counts and a hand-picked term: | still above the threshold, at PRR 146.",
+  "variant": "pending"
+ },
+ {
+  "id": "new",
+  "at": 162.4,
+  "text": "New at LA Hacks, on Helix's catalog: | the pipeline, both checks, the agents, the watch and the page.",
+  "variant": "only"
+ },
+ {
+  "id": "limits",
+  "at": 170.2,
+  "text": "A drug is only a partial knockout, | so its effects may be milder, or absent.",
+  "variant": "only"
+ },
+ {
+  "id": "close",
+  "at": 175.6,
+  "text": "Every genetic disease already ran the *trial*.",
+  "variant": "only"
+ }
+]

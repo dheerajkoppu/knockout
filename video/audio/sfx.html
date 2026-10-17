@@ -1,0 +1,418 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>Sound effects</title>
+<script>
+  "use strict";
+
+  const SAMPLE_RATE = 48000;
+
+  function createRandom(seed) {
+    let state = seed >>> 0;
+    return () => {
+      state = (state + 0x6d2b79f5) >>> 0;
+      let value = state;
+      value = Math.imul(value ^ (value >>> 15), value | 1);
+      value ^= value + Math.imul(value ^ (value >>> 7), value | 61);
+      return ((value ^ (value >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+
+  const noteFrequency = (note) => 440 * 2 ** ((note - 69) / 12);
+
+  function createNoiseBuffer(context, seconds, seed) {
+    const buffer = context.createBuffer(
+      2,
+      Math.round(seconds * context.sampleRate),
+      context.sampleRate,
+    );
+    const random = createRandom(seed);
+    for (let channel = 0; channel < 2; channel++) {
+      const data = buffer.getChannelData(channel);
+      for (let index = 0; index < data.length; index++)
+        data[index] = random() * 2 - 1;
+    }
+    return buffer;
+  }
+
+  // Stereo noise with an exponential decay that also darkens over time.
+  function createImpulse(context, { seconds, decay, seed, brightness }) {
+    const length = Math.round(seconds * context.sampleRate);
+    const impulse = context.createBuffer(2, length, context.sampleRate);
+    const random = createRandom(seed);
+    for (let channel = 0; channel < 2; channel++) {
+      const data = impulse.getChannelData(channel);
+      let smoothed = 0;
+      for (let index = 0; index < length; index++) {
+        const time = index / context.sampleRate;
+        const coefficient = 0.03 + brightness * Math.exp(-time * 2.2);
+        smoothed += (random() * 2 - 1 - smoothed) * coefficient;
+        const fadeIn = Math.min(1, time / 0.008);
+        const fadeOut = Math.min(1, (seconds - time) / 0.25);
+        data[index] = smoothed * Math.exp(-time * decay) * fadeIn * fadeOut;
+      }
+    }
+    return impulse;
+  }
+
+  function createReverb(
+    context,
+    output,
+    { seconds, decay, seed, brightness, preDelay, level },
+  ) {
+    const input = context.createGain();
+    const delay = context.createDelay(0.2);
+    delay.delayTime.value = preDelay;
+    const convolver = context.createConvolver();
+    convolver.buffer = createImpulse(context, {
+      seconds,
+      decay,
+      seed,
+      brightness,
+    });
+    const returnGain = context.createGain();
+    returnGain.gain.value = level;
+    input.connect(delay).connect(convolver).connect(returnGain).connect(output);
+    return input;
+  }
+
+  function createBus(
+    context,
+    destination,
+    { level = 1, chain = [], sends = [] } = {},
+  ) {
+    const input = context.createGain();
+    input.gain.value = level;
+    let tail = input;
+    for (const node of chain) tail = tail.connect(node);
+    tail.connect(destination);
+    for (const [node, amount] of sends) {
+      const send = context.createGain();
+      send.gain.value = amount;
+      tail.connect(send).connect(node);
+    }
+    return input;
+  }
+
+  function createFilter(context, type, frequency, quality = 0.707, gain = 0) {
+    const filter = context.createBiquadFilter();
+    filter.type = type;
+    filter.frequency.value = frequency;
+    filter.Q.value = quality;
+    filter.gain.value = gain;
+    return filter;
+  }
+
+  // Envelopes start silent; a GainNode otherwise passes audio at 1 until its first automation event.
+  function createEnvelope(context) {
+    const envelope = context.createGain();
+    envelope.gain.value = 0;
+    return envelope;
+  }
+
+  function createPanner(context, pan) {
+    const panner = context.createStereoPanner();
+    panner.pan.value = pan;
+    return panner;
+  }
+
+  function startOscillator(
+    context,
+    type,
+    frequency,
+    destination,
+    start,
+    stop,
+    detune = 0,
+  ) {
+    const oscillator = context.createOscillator();
+    oscillator.type = type;
+    oscillator.frequency.value = frequency;
+    oscillator.detune.value = detune;
+    oscillator.connect(destination);
+    oscillator.start(start);
+    oscillator.stop(stop);
+    return oscillator;
+  }
+
+  function percussiveGain(
+    context,
+    destination,
+    time,
+    level,
+    decay,
+    attack = 0.002,
+  ) {
+    const envelope = createEnvelope(context);
+    envelope.gain.setValueAtTime(0, time);
+    envelope.gain.linearRampToValueAtTime(level, time + attack);
+    envelope.gain.setTargetAtTime(0, time + attack, decay);
+    envelope.connect(destination);
+    return envelope;
+  }
+
+  function startNoise(context, noise, random, destination, start, stop) {
+    const source = context.createBufferSource();
+    source.buffer = noise;
+    source.connect(destination);
+    source.start(start, random() * (noise.duration - (stop - start) - 0.1));
+    source.stop(stop);
+    return source;
+  }
+
+
+  function playWhoosh(context, output, noise, random, options) {
+    const {
+      start,
+      peak,
+      end,
+      fromFrequency,
+      peakFrequency,
+      toFrequency,
+      level,
+      panFrom = 0,
+      panTo = 0,
+      quality = 1.2,
+    } = options;
+    const filter = createFilter(context, "bandpass", fromFrequency, quality);
+    filter.frequency.setValueAtTime(fromFrequency, start);
+    filter.frequency.exponentialRampToValueAtTime(peakFrequency, peak);
+    filter.frequency.exponentialRampToValueAtTime(toFrequency, end);
+    const envelope = createEnvelope(context);
+    const curve = new Float32Array(256).map((_, index) => {
+      const time = start + ((end - start) * index) / 255;
+      if (time <= peak) return level * ((time - start) / (peak - start)) ** 2;
+      return level * ((end - time) / (end - peak)) ** 2.4;
+    });
+    envelope.gain.setValueAtTime(0, 0);
+    envelope.gain.setValueCurveAtTime(curve, start, end - start);
+    const panner = context.createStereoPanner();
+    panner.pan.setValueAtTime(panFrom, start);
+    panner.pan.linearRampToValueAtTime(panTo, end);
+    filter.connect(envelope).connect(panner).connect(output);
+    startNoise(context, noise, random, filter, start, end + 0.02);
+  }
+
+  function playTone(
+    context,
+    output,
+    {
+      time,
+      frequency,
+      level,
+      decay,
+      partials = [[1, 1]],
+      attack = 0.004,
+      pan = 0,
+    },
+  ) {
+    const panner = createPanner(context, pan);
+    panner.connect(output);
+    for (const [ratio, amount, decayScale = 1] of partials) {
+      const envelope = percussiveGain(
+        context,
+        panner,
+        time,
+        level * amount,
+        decay * decayScale,
+        attack,
+      );
+      startOscillator(
+        context,
+        "sine",
+        frequency * ratio,
+        envelope,
+        time,
+        time + decay * decayScale * 8,
+      );
+    }
+  }
+
+  function playPop(
+    context,
+    output,
+    noise,
+    random,
+    { time, from, to, level, decay, pan = 0 },
+  ) {
+    const panner = createPanner(context, pan);
+    panner.connect(output);
+    const envelope = percussiveGain(context, panner, time, level, decay, 0.002);
+    const oscillator = startOscillator(
+      context,
+      "sine",
+      from,
+      envelope,
+      time,
+      time + decay * 8,
+    );
+    oscillator.frequency.setValueAtTime(from, time);
+    oscillator.frequency.exponentialRampToValueAtTime(to, time + 0.04);
+    const clickFilter = createFilter(context, "highpass", 3000, 0.7);
+    clickFilter.connect(panner);
+    const click = percussiveGain(
+      context,
+      clickFilter,
+      time,
+      level * 0.25,
+      0.003,
+      0.0005,
+    );
+    startNoise(context, noise, random, click, time, time + 0.03);
+  }
+
+  /* Every sound is placed by time, from audio/sfx.json plus the taps in the footage. Add a kind here when
+     the video needs one; the demo-video skill's examples/classway/audio/score.html has ticks, thuds,
+     blips, and a full score to borrow from. */
+  function buildSfx(context, settings) {
+    const random = createRandom(4242);
+    const noise = createNoiseBuffer(context, 8, 2718);
+    const output = context.createGain();
+    output
+      .connect(createFilter(context, "highshelf", 9000, 0.707, -2))
+      .connect(context.destination);
+    const reverb = createReverb(context, output, {
+      seconds: 1.6,
+      decay: 3.2,
+      seed: 577,
+      brightness: 0.45,
+      preDelay: 0.012,
+      level: 0.5,
+    });
+    const withReverb = (amount) =>
+      createBus(context, output, { sends: [[reverb, amount]] });
+    const dry = withReverb(0.12);
+    const roomy = withReverb(0.5);
+
+    /* Scene and feature changes: the whoosh peaks on the cut and alternates sides. */
+    settings.whooshes
+      .filter((time) => time > 0.35)
+      .forEach((time, index) =>
+        playWhoosh(context, dry, noise, random, {
+          start: time - 0.32,
+          peak: time - 0.02,
+          end: time + 0.38,
+          fromFrequency: 600,
+          peakFrequency: 2600,
+          toFrequency: 1100,
+          level: 0.09,
+          panFrom: index % 2 ? -0.4 : 0.4,
+          panTo: index % 2 ? 0.4 : -0.4,
+          quality: 1.4,
+        }),
+      );
+
+    /* Something lands: a logo, a pin, a card. */
+    for (const time of settings.pops) {
+      playPop(context, roomy, noise, random, {
+        time,
+        from: 720,
+        to: 290,
+        level: 0.16,
+        decay: 0.07,
+      });
+    }
+
+    /* A result arrives. */
+    for (const time of settings.chimes) {
+      playTone(context, roomy, {
+        time,
+        frequency: noteFrequency(86),
+        level: 0.13,
+        decay: 0.4,
+        partials: [
+          [1, 1],
+          [1.5, 0.3, 0.7],
+          [2, 0.12, 0.4],
+        ],
+      });
+    }
+
+    /* A riser builds into a reveal and stops on it: [start, end]. */
+    for (const [start, end] of settings.risers) {
+      const bandpass = createFilter(context, "bandpass", 500, 1.6);
+      bandpass.frequency.setValueAtTime(500, start);
+      bandpass.frequency.exponentialRampToValueAtTime(7000, end);
+      const envelope = createEnvelope(context);
+      envelope.gain.setValueAtTime(0.0005, start);
+      envelope.gain.exponentialRampToValueAtTime(0.27, end - 0.02);
+      envelope.gain.linearRampToValueAtTime(0, end + 0.05);
+      bandpass
+        .connect(createFilter(context, "highpass", 250, 0.7))
+        .connect(envelope)
+        .connect(roomy);
+      startNoise(context, noise, random, bandpass, start, end + 0.1);
+    }
+
+    /* Keystrokes: a soft tick per key, well under the voice. */
+    for (const time of settings.keys) {
+      const keyFilter = createFilter(context, "bandpass", 3600 + random() * 900, 1.1);
+      keyFilter.connect(dry);
+      const click = percussiveGain(context, keyFilter, time, 0.028 + random() * 0.01, 0.004, 0.0004);
+      startNoise(context, noise, random, click, time, time + 0.03);
+    }
+
+    /* UI taps, at the moments the touch indicators land. */
+    for (const time of settings.taps) {
+      const tapFilter = createFilter(context, "highpass", 2800, 0.7);
+      tapFilter.connect(dry);
+      const click = percussiveGain(
+        context,
+        tapFilter,
+        time,
+        0.045,
+        0.0025,
+        0.0003,
+      );
+      startNoise(context, noise, random, click, time, time + 0.03);
+      playTone(context, dry, {
+        time,
+        frequency: 2350,
+        level: 0.015,
+        decay: 0.004,
+        attack: 0.0005,
+      });
+    }
+  }
+
+  /* ---------------- Rendering bridge ---------------- */
+
+  let renderedBuffer = null;
+
+  window.renderTrack = async (settings) => {
+    const length = Math.round(settings.duration * SAMPLE_RATE);
+    const context = new OfflineAudioContext(2, length, SAMPLE_RATE);
+    buildSfx(context, settings);
+    renderedBuffer = await context.startRendering();
+    let peak = 0;
+    for (let channel = 0; channel < renderedBuffer.numberOfChannels; channel++) {
+      const data = renderedBuffer.getChannelData(channel);
+      for (let index = 0; index < data.length; index++)
+        peak = Math.max(peak, Math.abs(data[index]));
+    }
+    return {
+      sampleRate: renderedBuffer.sampleRate,
+      length,
+      channelCount: renderedBuffer.numberOfChannels,
+      peakDecibels: 20 * Math.log10(peak || 1e-9),
+    };
+  };
+
+  window.readSamples = (channel, start, length) => {
+    const samples = renderedBuffer
+      .getChannelData(channel)
+      .subarray(start, start + length);
+    const bytes = new Uint8Array(
+      samples.buffer,
+      samples.byteOffset,
+      samples.byteLength,
+    );
+    let binary = "";
+    for (let offset = 0; offset < bytes.length; offset += 0x8000) {
+      binary += String.fromCharCode.apply(
+        null,
+        bytes.subarray(offset, offset + 0x8000),
+      );
+    }
+    return btoa(binary);
+  };
+</script>

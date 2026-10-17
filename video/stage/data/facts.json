@@ -1,0 +1,295 @@
+{
+ "generatedAt": "2026-10-17T23:28:23.075Z",
+ "capturedAt": "2026-10-17T23:26:39.974Z",
+ "status": {
+  "mapping": false,
+  "meningococcalOnLabel": false,
+  "mappingWithoutMeningococcal": false,
+  "asiOne": false,
+  "benchmark": false,
+  "candidate": false,
+  "creao": false,
+  "watchFromReport": false
+ },
+ "hook": {
+  "gene": "C5",
+  "protein": "Complement C5",
+  "accession": "P01031",
+  "action": "INHIBITOR",
+  "effect": "lowers",
+  "drug": "Eculizumab",
+  "chemblId": "CHEMBL1201828",
+  "disease": "C5 deficiency",
+  "directionSource": "disease_name",
+  "phenotype": "Recurrent Neisseria meningitidis infection",
+  "hpoId": "HP:0005381",
+  "frequency": "2/2",
+  "catalogRecord": "Catalog record Table 8 row 12",
+  "omim": "OMIM:609536"
+ },
+ "label": {
+  "setId": "ebcd67fa-b4d1-4a22-b33d-ee8bf6b9c722",
+  "effective": "8 Jul 2026",
+  "section": "boxed_warning",
+  "sentence": "WARNING: SERIOUS MENINGOCOCCAL INFECTIONS SOLIRIS, a complement inhibitor, increases the risk of serious infections caused by Neisseria meningitidis [see Warnings and Precautions (5.1) ] .",
+  "title": "WARNING: SERIOUS MENINGOCOCCAL INFECTIONS"
+ },
+ "handcheck": {
+  "checkedAt": "2026-10-17T23:26:46+00:00",
+  "term": "MENINGOCOCCAL INFECTION",
+  "a": "86",
+  "drug": "54,046",
+  "reaction": "311",
+  "all": "20,692,690",
+  "b": "53,960",
+  "c": "225",
+  "d": "20,638,419",
+  "prr": 146,
+  "prrExact": 145.96,
+  "chiSquared": "8,853",
+  "expected": 0.81,
+  "signal": true,
+  "allMillions": 21,
+  "allMillionsText": "20.7"
+ },
+ "report": {
+  "predictionCount": 3,
+  "predictionCountWords": "three",
+  "checkedCount": 0,
+  "drugReports": "54,046",
+  "allReports": "20,692,690",
+  "problems": [
+   "Step 5 could not map new phenotypes: GEMINI_API_KEY is not set in .env"
+  ],
+  "store": "postgres",
+  "geminiKey": false,
+  "sourceState": "Live API"
+ },
+ "agents": {
+  "question": "What side effects should a C5 blocker cause?",
+  "drugCount": 5,
+  "drugCountWords": "five",
+  "chosen": "Eculizumab",
+  "chosenName": "eculizumab",
+  "others": [
+   "ravulizumab",
+   "avacincaptad pegol sodium",
+   "pozelimab",
+   "crovalimab"
+  ],
+  "events": [
+   {
+    "agent": "knockout-orchestrator",
+    "message": "request from agent1qv9zetnngm: analyze drug=[] target=c5 focus=None"
+   },
+   {
+    "agent": "target-agent",
+    "message": "target-agent: slice for 'eculizumab' requested by agent1qv74c0jkqh"
+   },
+   {
+    "agent": "target-agent",
+    "message": "target-agent: ok"
+   },
+   {
+    "agent": "genetics-agent",
+    "message": "genetics-agent: slice for 'eculizumab' requested by agent1qv74c0jkqh"
+   },
+   {
+    "agent": "label-agent",
+    "message": "label-agent: slice for 'eculizumab' requested by agent1qv74c0jkqh"
+   },
+   {
+    "agent": "signal-agent",
+    "message": "signal-agent: slice for 'eculizumab' requested by agent1qv74c0jkqh"
+   },
+   {
+    "agent": "label-agent",
+    "message": "label-agent: unknown (no prediction has reaction terms yet, so nothing could be checked)"
+   },
+   {
+    "agent": "genetics-agent",
+    "message": "genetics-agent: ok (Step 5 could not map new phenotypes: GEMINI_API_KEY is not set in .env)"
+   },
+   {
+    "agent": "signal-agent",
+    "message": "signal-agent: unknown (no prediction has reaction terms yet, so no reports were counted)"
+   }
+  ],
+  "reply": [
+   "ChEMBL lists 5 approved drugs that block Complement C5. The genetic prediction is the same for all of them; the label and report checks are per drug, so here is **Eculizumab** (first approved 2007), the longest on the market. Others: ravulizumab, avacincaptad pegol sodium, pozelimab, crovalimab.",
+   "",
+   "**Eculizumab** lowers the activity of **Complement C5** (C5) (ChEMBL action type INHIBITOR).",
+   "",
+   "People born with that protein not working have **C5 deficiency**; their symptoms are the predictions.",
+   "",
+   "**Predicted side effects (3):**",
+   "",
+   "1. **Decreased circulating complement C5 concentration** (2/2 cases): Unknown",
+   "   Why unknown: phenotype not mapped yet (step 5)",
+   "",
+   "2. **Recurrent Neisseria meningitidis infection** (2/2 cases): Unknown",
+   "   Why unknown: phenotype not mapped yet (step 5)",
+   "",
+   "3. **Reduced circulating CH50 activity** (2/2 cases): Unknown",
+   "   Why unknown: phenotype not mapped yet (step 5)",
+   "",
+   "**Could not run:** label-agent (step 6, FDA label) answered unknown: no prediction has reaction terms yet, so nothing could be checked; signal-agent (steps 7 and 8, FDA reports) answered unknown: no prediction has reaction terms yet, so no reports were counted.",
+   "",
+   "**Notes:** genetics-agent: Step 5 could not map new phenotypes: GEMINI_API_KEY is not set in .env.",
+   "",
+   "_FDA adverse-event reports are voluntary and uneven; a boxed warning itself raises reporting of the effect it names; patients on immune drugs have immune diseases, so infections may come from the disease; a lifelong genetic loss is stronger than partial inhibition by a drug. Unknown never means safe. Research use only, not medical advice._",
+   "",
+   "Reply **full report** for every prediction with its label quote, report counts, sources and trend (0.1 FET testnet).",
+   "",
+   "Agents: target-agent ok · genetics-agent ok · label-agent unknown · signal-agent unknown",
+   ""
+  ],
+  "statusLine": "Agents: target-agent ok · genetics-agent ok · label-agent unknown · signal-agent unknown",
+  "target": "ok",
+  "genetics": "ok",
+  "labelAgent": "unknown",
+  "signal": "unknown",
+  "cardButtons": [
+   "Full report · 0.1 FET",
+   "Check ravulizumab",
+   "Check avacincaptad pegol sodium"
+  ],
+  "ranAt": "2026-10-17T23:26:46Z"
+ },
+ "watch": {
+  "runId": "manual-20261017T232652Z-fc2a70",
+  "termSource": "manual",
+  "term": "MENINGOCOCCAL INFECTION",
+  "quarters": [
+   {
+    "quarter": "2024Q3",
+    "reports": 0,
+    "prr": 158,
+    "signal": true
+   },
+   {
+    "quarter": "2024Q4",
+    "reports": 1,
+    "prr": 157,
+    "signal": true
+   },
+   {
+    "quarter": "2025Q1",
+    "reports": 0,
+    "prr": 154,
+    "signal": true
+   },
+   {
+    "quarter": "2025Q2",
+    "reports": 2,
+    "prr": 155,
+    "signal": true
+   },
+   {
+    "quarter": "2025Q3",
+    "reports": 1,
+    "prr": 154,
+    "signal": true
+   },
+   {
+    "quarter": "2025Q4",
+    "reports": 0,
+    "prr": 151,
+    "signal": true
+   },
+   {
+    "quarter": "2026Q1",
+    "reports": 2,
+    "prr": 151,
+    "signal": true
+   },
+   {
+    "quarter": "2026Q2",
+    "reports": 0,
+    "prr": 146,
+    "signal": true
+   }
+  ],
+  "quarterCount": 8,
+  "quarterCountWords": "eight",
+  "first": "2024Q3",
+  "last": "2026Q2",
+  "latestPrr": 146,
+  "latestSignal": true,
+  "requests": 37,
+  "openfdaKey": false,
+  "seconds": 78,
+  "openfdaUpdated": "2026-07-30",
+  "apiLastRun": "2026-10-17T21:45:31+00:00",
+  "apiTermSource": "manual",
+  "footage": null
+ },
+ "meningococcal": null,
+ "trigger": [
+  "1. A prediction inserted on its own fails at commit:",
+  "BEGIN",
+  "INSERT 0 1",
+  "INSERT 0 1",
+  "psql:/tmp/demo.sql:11: ERROR:  prediction 143 (HP:0000001 Demo phenotype, from Demo disease) for trigger-demo has no evidence row",
+  "HINT:  No prediction without its cited chain: insert its evidence in the same transaction.",
+  "CONTEXT:  PL/pgSQL function knockout_prediction_needs_evidence() line 5 at RAISE",
+  "2. The same prediction with an evidence row in the same transaction is accepted (then rolled back):",
+  "BEGIN",
+  "INSERT 0 1",
+  "INSERT 0 1",
+  "SET CONSTRAINTS",
+  " predictions_with_evidence ",
+  "---------------------------",
+  "                         1",
+  "(1 row)",
+  "",
+  "ROLLBACK"
+ ],
+ "timescaledb": "2.30.2",
+ "benchmark": {
+  "protocolVersion": 2,
+  "drugSetVersion": 2,
+  "drugCount": 52,
+  "funnel": {
+   "step1_genes_kept": 407,
+   "step1_genes_dropped": 104,
+   "step2_records_kept": 118,
+   "step2_candidates_dropped": 329,
+   "step3_molecules_kept": 57,
+   "step3_pairs_dropped": 40,
+   "step4_drugs_kept": 52,
+   "step4_molecules_dropped": 5,
+   "drugs_with_boxed_warning": 18
+  },
+  "resultsVersion": 1,
+  "resultsCurrent": false,
+  "scored": false,
+  "blocked": "scoring is blocked on step 5: GEMINI_API_KEY is not set in .env, so none of the 525 predictions has a kind or reaction terms, and no label or report check could run",
+  "labelPrecision": null,
+  "labelPrecisionCounts": null,
+  "reportPrecision": null,
+  "shuffleLabelPrecision": null,
+  "lift": null,
+  "shareAtOrAbove": null,
+  "boxedPredicted": null,
+  "boxedTotal": 18,
+  "candidateCount": null,
+  "shuffles": 100,
+  "seed": 20261017
+ },
+ "candidate": null,
+ "catalog": {
+  "diseases": 604,
+  "genes": 511,
+  "release": "iuis_2024 2026-10-03"
+ },
+ "ibrutinib": {
+  "predictionCount": 37,
+  "target": "Tyrosine-protein kinase BTK",
+  "disease": "BTK deficiency, X-linked agammaglobulinemia"
+ },
+ "footage": {
+  "asiOne": null,
+  "creao": null
+ }
+}

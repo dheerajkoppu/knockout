@@ -1,0 +1,239 @@
+INFO:     [knockout-orchestrator]: Starting agent with address: agent1qv74c0jkqh0geaa63xxqvqs7ps5rwgvmcmzyuz2nnxtvvtvcy8vqyue97l3
+WARNING:  [knockout-orchestrator]: No endpoints provided. Skipping registration: Agent won't be reachable.
+INFO:     [target-agent]: Starting agent with address: agent1qgd94sruwujjsgg0p2nkqqzywdj0adshydlmasq69h60vzdcn4a9jqk4mzm
+WARNING:  [target-agent]: No endpoints provided. Skipping registration: Agent won't be reachable.
+INFO:     [genetics-agent]: Starting agent with address: agent1qvqw6xu5t6nylfxek4alltdjplvfjcw0738zrng68jx7s8479tk22kef078
+WARNING:  [genetics-agent]: No endpoints provided. Skipping registration: Agent won't be reachable.
+INFO:     [label-agent]: Starting agent with address: agent1q0knjlpju4ps60q4hkjf3rx42m8969mpd9z2tpwnxhwd5dlwtpgwv8ta7w8
+WARNING:  [label-agent]: No endpoints provided. Skipping registration: Agent won't be reachable.
+INFO:     [signal-agent]: Starting agent with address: agent1qdpc3w33hypp95dtv2zjnkrauf59wxr3rr06nkdnfkt2kftkcavfsn9znls
+WARNING:  [signal-agent]: No endpoints provided. Skipping registration: Agent won't be reachable.
+INFO:     [local-user]: Starting agent with address: agent1qv9zetnngmd65ns7wnutyles4rv88pedr706u3asfanftvztphxr75re90v
+WARNING:  [local-user]: No endpoints provided. Skipping registration: Agent won't be reachable.
+INFO:     [knockout-orchestrator]: knockout-orchestrator address agent1qv74c0jkqh0geaa63xxqvqs7ps5rwgvmcmzyuz2nnxtvvtvcy8vqyue97l3
+INFO:     [knockout-orchestrator]: knockout-orchestrator inspector https://agentverse.ai/inspect/?uri=http%3A//127.0.0.1%3A8101&address=agent1qv74c0jkqh0geaa63xxqvqs7ps5rwgvmcmzyuz2nnxtvvtvcy8vqyue97l3
+INFO:     [target-agent]: target-agent address agent1qgd94sruwujjsgg0p2nkqqzywdj0adshydlmasq69h60vzdcn4a9jqk4mzm
+INFO:     [target-agent]: target-agent inspector https://agentverse.ai/inspect/?uri=http%3A//127.0.0.1%3A8102&address=agent1qgd94sruwujjsgg0p2nkqqzywdj0adshydlmasq69h60vzdcn4a9jqk4mzm
+INFO:     [genetics-agent]: genetics-agent address agent1qvqw6xu5t6nylfxek4alltdjplvfjcw0738zrng68jx7s8479tk22kef078
+INFO:     [genetics-agent]: genetics-agent inspector https://agentverse.ai/inspect/?uri=http%3A//127.0.0.1%3A8103&address=agent1qvqw6xu5t6nylfxek4alltdjplvfjcw0738zrng68jx7s8479tk22kef078
+INFO:     [label-agent]: label-agent address agent1q0knjlpju4ps60q4hkjf3rx42m8969mpd9z2tpwnxhwd5dlwtpgwv8ta7w8
+INFO:     [label-agent]: label-agent inspector https://agentverse.ai/inspect/?uri=http%3A//127.0.0.1%3A8104&address=agent1q0knjlpju4ps60q4hkjf3rx42m8969mpd9z2tpwnxhwd5dlwtpgwv8ta7w8
+INFO:     [signal-agent]: signal-agent address agent1qdpc3w33hypp95dtv2zjnkrauf59wxr3rr06nkdnfkt2kftkcavfsn9znls
+INFO:     [signal-agent]: signal-agent inspector https://agentverse.ai/inspect/?uri=http%3A//127.0.0.1%3A8105&address=agent1qdpc3w33hypp95dtv2zjnkrauf59wxr3rr06nkdnfkt2kftkcavfsn9znls
+INFO:     [knockout-orchestrator]: request from agent1qv9zetnngm: analyze drug=[] target=c5 focus=None
+INFO:     [target-agent]: target-agent: slice for 'eculizumab' requested by agent1qv74c0jkqh
+INFO:     [target-agent]: target-agent: ok
+INFO:     [genetics-agent]: genetics-agent: slice for 'eculizumab' requested by agent1qv74c0jkqh
+INFO:     [label-agent]: label-agent: slice for 'eculizumab' requested by agent1qv74c0jkqh
+INFO:     [signal-agent]: signal-agent: slice for 'eculizumab' requested by agent1qv74c0jkqh
+INFO:     [label-agent]: label-agent: unknown (no prediction has reaction terms yet, so nothing could be checked)
+INFO:     [genetics-agent]: genetics-agent: ok (Step 5 could not map new phenotypes: GEMINI_API_KEY is not set in .env)
+INFO:     [signal-agent]: signal-agent: unknown (no prediction has reaction terms yet, so no reports were counted)
+ChEMBL lists 5 approved drugs that block Complement C5. The genetic prediction is the same for all of them; the label and report checks are per drug, so here is **Eculizumab** (first approved 2007), the longest on the market. Others: ravulizumab, avacincaptad pegol sodium, pozelimab, crovalimab.
+
+**Eculizumab** lowers the activity of **Complement C5** (C5) (ChEMBL action type INHIBITOR).
+
+People born with that protein not working have **C5 deficiency**; their symptoms are the predictions.
+
+**Predicted side effects (3):**
+
+1. **Decreased circulating complement C5 concentration** (2/2 cases): Unknown
+   Why unknown: phenotype not mapped yet (step 5)
+
+2. **Recurrent Neisseria meningitidis infection** (2/2 cases): Unknown
+   Why unknown: phenotype not mapped yet (step 5)
+
+3. **Reduced circulating CH50 activity** (2/2 cases): Unknown
+   Why unknown: phenotype not mapped yet (step 5)
+
+**Could not run:** label-agent (step 6, FDA label) answered unknown: no prediction has reaction terms yet, so nothing could be checked; signal-agent (steps 7 and 8, FDA reports) answered unknown: no prediction has reaction terms yet, so no reports were counted.
+
+**Notes:** genetics-agent: Step 5 could not map new phenotypes: GEMINI_API_KEY is not set in .env.
+
+_FDA adverse-event reports are voluntary and uneven; a boxed warning itself raises reporting of the effect it names; patients on immune drugs have immune diseases, so infections may come from the disease; a lifelong genetic loss is stronger than partial inhibition by a drug. Unknown never means safe. Research use only, not medical advice._
+
+Reply **full report** for every prediction with its label quote, report counts, sources and trend (0.1 FET testnet).
+
+Agents: target-agent ok · genetics-agent ok · label-agent unknown · signal-agent unknown
+
+[Interactive Card: custom]
+{
+  "root": {
+    "type": "section",
+    "title": "Eculizumab: side effects predicted from genetics",
+    "subtitle": "Knockout · drug → protein → genetic disease → symptom, checked against the FDA label and reports",
+    "children": [
+      {
+        "type": "group",
+        "direction": "row",
+        "gap": 8,
+        "children": [
+          {
+            "type": "badge",
+            "label": "C5: lowers",
+            "variant": "info"
+          },
+          {
+            "type": "badge",
+            "label": "C5 deficiency",
+            "variant": "info"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "value": "Eculizumab lowers the activity of Complement C5 (C5) (ChEMBL action type INHIBITOR)."
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "children": [
+              {
+                "type": "heading",
+                "value": "Decreased circulating complement C5 concentration",
+                "level": 3
+              },
+              {
+                "type": "badge",
+                "label": "Unknown",
+                "variant": "info"
+              },
+              {
+                "type": "text",
+                "value": "From C5 deficiency · 2/2",
+                "style": "muted"
+              },
+              {
+                "type": "text",
+                "value": "Why unknown: phenotype not mapped yet (step 5)",
+                "style": "muted"
+              }
+            ]
+          },
+          {
+            "children": [
+              {
+                "type": "heading",
+                "value": "Recurrent Neisseria meningitidis infection",
+                "level": 3
+              },
+              {
+                "type": "badge",
+                "label": "Unknown",
+                "variant": "info"
+              },
+              {
+                "type": "text",
+                "value": "From C5 deficiency · 2/2",
+                "style": "muted"
+              },
+              {
+                "type": "text",
+                "value": "Why unknown: phenotype not mapped yet (step 5)",
+                "style": "muted"
+              }
+            ]
+          },
+          {
+            "children": [
+              {
+                "type": "heading",
+                "value": "Reduced circulating CH50 activity",
+                "level": 3
+              },
+              {
+                "type": "badge",
+                "label": "Unknown",
+                "variant": "info"
+              },
+              {
+                "type": "text",
+                "value": "From C5 deficiency · 2/2",
+                "style": "muted"
+              },
+              {
+                "type": "text",
+                "value": "Why unknown: phenotype not mapped yet (step 5)",
+                "style": "muted"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "value": "Could not run: label-agent (step 6, FDA label) answered unknown: no prediction has reaction terms yet, so nothing could be checked",
+        "style": "muted"
+      },
+      {
+        "type": "text",
+        "value": "Could not run: signal-agent (steps 7 and 8, FDA reports) answered unknown: no prediction has reaction terms yet, so no reports were counted",
+        "style": "muted"
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "text",
+        "value": "FDA adverse-event reports are voluntary and uneven; a boxed warning itself raises reporting of the effect it names; patients on immune drugs have immune diseases, so infections may come from the disease; a lifelong genetic loss is stronger than partial inhibition by a drug. Unknown never means safe. Research use only, not medical advice.",
+        "style": "muted"
+      },
+      {
+        "type": "group",
+        "direction": "row",
+        "gap": 8,
+        "children": [
+          {
+            "type": "button",
+            "label": "Full report · 0.1 FET",
+            "primary": true,
+            "action": {
+              "selection": {
+                "action": "full_report",
+                "drug": "eculizumab"
+              }
+            }
+          },
+          {
+            "type": "button",
+            "label": "Check ravulizumab",
+            "primary": false,
+            "action": {
+              "selection": {
+                "action": "analyze",
+                "drug": "ravulizumab"
+              }
+            }
+          },
+          {
+            "type": "button",
+            "label": "Check avacincaptad pegol sodium",
+            "primary": false,
+            "action": {
+              "selection": {
+                "action": "analyze",
+                "drug": "avacincaptad pegol sodium"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
+INFO:     [dispenser]: Shutting down dispenser...
+INFO:     [dispenser]: Shutting down dispenser...complete
+INFO:     [dispenser]: Shutting down dispenser...
+INFO:     [dispenser]: Shutting down dispenser...complete
+INFO:     [dispenser]: Shutting down dispenser...
+INFO:     [dispenser]: Shutting down dispenser...complete
+INFO:     [dispenser]: Shutting down dispenser...
+INFO:     [dispenser]: Shutting down dispenser...complete
+INFO:     [dispenser]: Shutting down dispenser...
+INFO:     [dispenser]: Shutting down dispenser...complete
+INFO:     [dispenser]: Shutting down dispenser...
+INFO:     [dispenser]: Shutting down dispenser...complete

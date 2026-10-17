@@ -1,0 +1,283 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>Knockout demo stage</title>
+<link rel="stylesheet" href="fonts.css" />
+<link rel="stylesheet" href="engine.css" />
+<link rel="stylesheet" href="stage.css" />
+<div id="stage">
+  <!-- Scenes go in the order they play: each one arrives over the scene before it. -->
+  <section id="hook" class="scene dark">
+    <div class="hook-grid">
+      <div class="hook-row" id="hookGenetic">
+        <div class="hook-role mono" id="hookRoleA">Born without it</div>
+        <div class="hook-cause">
+          <div class="hook-subject">
+            <span id="hookGene">C5</span><span class="genotype">−/−</span>
+          </div>
+          <div class="hook-meta mono" id="hookGeneMeta"></div>
+        </div>
+        <svg class="hook-arrow" id="hookArrowA" viewBox="0 0 140 40">
+          <path d="M4 20 H128" />
+          <path d="M116 8 L130 20 L116 32" />
+        </svg>
+        <div class="hook-effect">
+          <div class="hook-effect-text" id="hookPhenotype"></div>
+          <div class="hook-meta mono" id="hookPhenotypeMeta"></div>
+        </div>
+      </div>
+      <div class="hook-row" id="hookDrug">
+        <div class="hook-role mono" id="hookRoleB">Blocked by a drug</div>
+        <div class="hook-cause">
+          <div class="hook-subject">
+            <span id="hookDrugName"></span
+            ><span class="hook-blocks" id="hookBlocks">⊣ C5</span>
+          </div>
+          <div class="hook-meta mono" id="hookDrugMeta"></div>
+        </div>
+        <svg class="hook-arrow" id="hookArrowB" viewBox="0 0 140 40">
+          <path d="M4 20 H128" />
+          <path d="M116 8 L130 20 L116 32" />
+        </svg>
+        <div class="hook-effect">
+          <div class="boxed" id="hookBoxed">
+            <svg
+              class="boxed-rule"
+              viewBox="0 0 700 156"
+              preserveAspectRatio="none"
+            >
+              <rect id="hookBoxedRule" x="3" y="3" width="694" height="150" />
+            </svg>
+            <div class="boxed-text" id="hookBoxedText"></div>
+          </div>
+          <div class="hook-meta mono" id="hookLabelMeta"></div>
+        </div>
+      </div>
+      <svg class="hook-bracket" id="hookBracket" viewBox="0 0 40 300">
+        <path id="hookBracketPath" d="M4 4 H24 V296 H4" />
+      </svg>
+      <div class="hook-same mono" id="hookSame">the same disease</div>
+    </div>
+  </section>
+
+  <section id="title" class="scene dark">
+    <div class="wordmark-big" id="titleWord">
+      knockout<span class="genotype">−/−</span>
+    </div>
+    <div class="title-kicker" id="titleKicker">
+      Side effects, read from genetics
+    </div>
+  </section>
+
+  <section id="method" class="scene light">
+    <div class="method-kicker" id="methodKicker">
+      Knockout turns that into a method.
+    </div>
+    <div class="method-text" id="methodText"></div>
+    <div class="method-sub" id="methodSub">
+      It should cause a milder form of that protein’s disease.
+    </div>
+  </section>
+
+  <section id="agents" class="scene light">
+    <div class="terminal agents-terminal" id="agentsTerminal">
+      <div class="terminal-bar">
+        <span>agents</span><span id="agentsRunAt"></span>
+      </div>
+      <div class="terminal-window">
+        <div class="terminal-body" id="agentsBody"></div>
+      </div>
+    </div>
+    <div class="agents-side">
+      <div class="agents-head" id="agentsHead">Five agents, one question.</div>
+      <div class="agent agent-orchestrator" id="agentOrchestrator">
+        <div class="agent-name mono">knockout-orchestrator</div>
+        <div class="agent-step">Reads the question, resolves the drug</div>
+        <div class="agent-result" id="agentOrchestratorResult"></div>
+        <div class="agent-others" id="agentOthers"></div>
+      </div>
+      <div class="agent-grid">
+        <div class="agent" id="agentTarget">
+          <div class="agent-name mono">target-agent</div>
+          <div class="agent-step">Steps 1–2 · ChEMBL</div>
+          <div class="agent-result" id="agentTargetResult"></div>
+          <div class="agent-status mono" id="agentTargetStatus"></div>
+        </div>
+        <div class="agent" id="agentGenetics">
+          <div class="agent-name mono">genetics-agent</div>
+          <div class="agent-step">Steps 3–5 · IUIS catalog</div>
+          <div class="agent-result" id="agentGeneticsResult"></div>
+          <div class="agent-status mono" id="agentGeneticsStatus"></div>
+        </div>
+        <div class="agent" id="agentLabel">
+          <div class="agent-name mono">label-agent</div>
+          <div class="agent-step">Step 6 · FDA label</div>
+          <div class="agent-result" id="agentLabelResult"></div>
+          <div class="agent-status mono" id="agentLabelStatus"></div>
+        </div>
+        <div class="agent" id="agentSignal">
+          <div class="agent-name mono">signal-agent</div>
+          <div class="agent-step">Steps 7–8 · FAERS reports</div>
+          <div class="agent-result" id="agentSignalResult"></div>
+          <div class="agent-status mono" id="agentSignalStatus"></div>
+        </div>
+      </div>
+    </div>
+    <div class="pending-card agents-pending" id="agentsPending">
+      <div class="pending-tag mono">Pending</div>
+      <div class="pending-title">The same question in ASI:One</div>
+      <div class="pending-body" id="agentsPendingBody"></div>
+    </div>
+    <div class="footage-frame" id="asiOneFrame" hidden>
+      <div class="frame-bar mono">ASI:One</div>
+      <div class="frame-viewport"><img id="asiOneImage" alt="" /></div>
+    </div>
+  </section>
+
+  <section id="report" class="scene light">
+    <div class="browser" id="reportBrowser">
+      <div class="browser-bar">
+        <span class="browser-dot"></span
+        ><span class="mono" id="reportPath">/</span>
+      </div>
+      <div class="browser-viewport" id="reportViewport">
+        <div class="plate page-plate" id="homePlate">
+          <img id="homeImage" alt="" />
+          <img class="typing" id="typingImage" alt="" />
+          <div class="touch report-touch" id="reportTouch"></div>
+        </div>
+        <div class="plate page-plate" id="livePlate">
+          <img id="liveImage" alt="" />
+        </div>
+        <div class="plate page-plate" id="fixturePlate">
+          <img id="fixtureImage" alt="" />
+        </div>
+      </div>
+      <div class="fixture-overlay" id="fixtureOverlay">
+        <span class="fixture-chip mono">Fixture</span>
+        <span
+          >Filled in by hand from the live records. Not an engine result.</span
+        >
+      </div>
+    </div>
+  </section>
+
+  <section id="bench" class="scene light">
+    <div class="bench-head" id="benchHead">Fixed before any scoring.</div>
+    <div class="protocol" id="benchProtocol">
+      <div class="protocol-file mono" id="protocolFile"></div>
+      <div class="protocol-stamp" id="protocolStamp"></div>
+      <ol class="protocol-rules" id="protocolRules"></ol>
+    </div>
+    <div class="funnel" id="benchFunnel"></div>
+    <div class="measures" id="benchMeasures">
+      <div class="measures-head">
+        <span class="measures-title">Measured</span>
+        <span class="pending-tag mono" id="measuresTag">Pending</span>
+      </div>
+      <div class="measures-rows" id="measuresRows"></div>
+      <div class="measures-note" id="measuresNote"></div>
+    </div>
+  </section>
+
+  <section id="signal" class="scene light">
+    <div class="signal-head" id="signalHead"></div>
+    <div class="signal-sub" id="signalSub"></div>
+    <div class="terminal signal-terminal" id="signalTerminal">
+      <div class="terminal-bar">
+        <span>timescaledb</span><span id="signalRunAt"></span>
+      </div>
+      <div class="terminal-window">
+        <div class="terminal-body" id="signalBody"></div>
+      </div>
+    </div>
+    <div class="candidate" id="signalCandidate">
+      <div class="candidate-rule">
+        <div class="candidate-cell">
+          <span class="verdict-mark mark-signal"></span>In the reports
+        </div>
+        <div class="candidate-plus">+</div>
+        <div class="candidate-cell">
+          <span class="verdict-mark mark-absent"></span>Not on the label
+        </div>
+        <div class="candidate-plus">=</div>
+        <div class="candidate-cell candidate-name">Candidate new signal</div>
+      </div>
+      <ul class="candidate-caveats" id="candidateCaveats"></ul>
+      <div class="pending-card signal-pending" id="signalPending">
+        <div class="pending-tag mono">Pending</div>
+        <div class="pending-title">A real candidate</div>
+        <div class="pending-body" id="signalPendingBody"></div>
+      </div>
+    </div>
+    <div class="candidate-ready" id="candidateReady" hidden></div>
+  </section>
+
+  <section id="watch" class="scene light">
+    <div class="terminal watch-terminal" id="watchTerminal">
+      <div class="terminal-bar">
+        <span>creao/watch.py</span><span id="watchRunAt"></span>
+      </div>
+      <div class="terminal-window">
+        <div class="terminal-body" id="watchBody"></div>
+      </div>
+    </div>
+    <div class="browser watch-browser" id="watchBrowser">
+      <div class="browser-bar">
+        <span class="browser-dot"></span
+        ><span class="mono">/drug/eculizumab · 03 Watching the reports</span>
+      </div>
+      <div class="browser-viewport" id="watchViewport">
+        <div class="plate page-plate" id="watchPlate">
+          <img id="watchImage" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="pending-card watch-pending" id="watchPending">
+      <div class="pending-tag mono">Pending</div>
+      <div class="pending-title">A scheduled run on Creao</div>
+      <div class="pending-body" id="watchPendingBody"></div>
+    </div>
+    <div class="footage-frame" id="creaoFrame" hidden>
+      <div class="frame-bar mono">Creao</div>
+      <div class="frame-viewport"><img id="creaoImage" alt="" /></div>
+    </div>
+  </section>
+
+  <section id="close" class="scene dark">
+    <div class="built" id="closeBuilt">
+      <div class="built-column">
+        <div class="built-title">Built at LA Hacks</div>
+        <ul class="built-list" id="builtNew"></ul>
+      </div>
+      <div class="built-column built-helix">
+        <div class="built-title">Reused from Helix</div>
+        <div class="built-source mono">MIT · pinned to 97f3704, 4 Oct 2026</div>
+        <ul class="built-list" id="builtHelix"></ul>
+      </div>
+    </div>
+    <div class="limits" id="closeLimits">
+      <div class="limits-head">A drug is only a partial knockout.</div>
+      <ul class="limits-list" id="limitsList"></ul>
+    </div>
+    <div class="close-end" id="closeEnd">
+      <div class="wordmark-big" id="closeWord">
+        knockout<span class="genotype">−/−</span>
+      </div>
+      <div class="close-tag" id="closeTag">
+        Every genetic disease already ran the trial.
+      </div>
+      <div class="close-credits mono" id="closeCredits">
+        github.com/dheerajkoppu/knockout · LA Hacks AI Hackathon 2026, UCLA
+      </div>
+    </div>
+  </section>
+
+  <div id="presenterWindow" class="presenter-window">
+    <img id="presenterWindowImage" alt="" />
+  </div>
+  <div id="caption" class="caption"></div>
+</div>
+<script src="../node_modules/gsap/dist/gsap.min.js"></script>
+<script src="../node_modules/gsap/dist/CustomEase.min.js"></script>
+<script src="engine.js"></script>
+<script src="stage.js"></script>

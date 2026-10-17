@@ -1,0 +1,28 @@
+{
+ "checked_at": "2026-10-17T23:26:46+00:00",
+ "drug": "eculizumab",
+ "term": "MENINGOCOCCAL INFECTION",
+ "term_chosen_by": "a person (step 5 mapping not run)",
+ "label": {
+  "set_id": "ebcd67fa-b4d1-4a22-b33d-ee8bf6b9c722",
+  "effective_time": "20260708",
+  "section": "boxed_warning",
+  "sentence": "WARNING: SERIOUS MENINGOCOCCAL INFECTIONS SOLIRIS, a complement inhibitor, increases the risk of serious infections caused by Neisseria meningitidis [see Warnings and Precautions (5.1) ] ."
+ },
+ "counts": {
+  "a": 86,
+  "drug": 54046,
+  "reaction": 311,
+  "all": 20692690,
+  "prr": 145.96,
+  "chi_squared": 8852.7,
+  "expected": 0.81,
+  "signal": true
+ },
+ "openfda_retrieved_at": "2026-10-17T22:24:17+00:00",
+ "catalog": {
+  "diseases": 604,
+  "genes": 511,
+  "release": "iuis_2024 2026-10-03"
+ }
+}

@@ -1,0 +1,4285 @@
+{
+ "home": {
+  "url": "http://127.0.0.1:3300/",
+  "capturedAt": "2026-10-17T23:26:39.974Z",
+  "viewport": {
+   "width": 1440,
+   "height": 900
+  },
+  "scale": 2,
+  "frames": [
+   "home-00.jpg",
+   "home-01.jpg",
+   "home-02.jpg",
+   "home-03.jpg",
+   "home-04.jpg",
+   "home-05.jpg",
+   "home-06.jpg",
+   "home-07.jpg",
+   "home-08.jpg",
+   "home-09.jpg",
+   "home-10.jpg",
+   "home-report.jpg"
+  ],
+  "rects": {
+   "header": [
+    {
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 57,
+     "text": "knockout −/− Dark"
+    }
+   ],
+   "masthead": [],
+   "title": [],
+   "deck": [],
+   "meta": [],
+   "fixtureBand": [],
+   "fixtureTag": [],
+   "problems": [],
+   "chainSection": [],
+   "chain": [],
+   "chainNodes": [],
+   "effectsSection": [],
+   "ledger": [],
+   "entries": [],
+   "unchecked": [],
+   "labelQuote": [],
+   "terms": [],
+   "statistic": [],
+   "criteria": [],
+   "twoByTwo": [],
+   "monitoringSection": [],
+   "monitorRun": [],
+   "trend": [],
+   "alerts": [],
+   "notUsedSection": [],
+   "caveats": [],
+   "footer": [
+    {
+     "x": 0,
+     "y": 1373,
+     "w": 1440,
+     "h": 164,
+     "text": "Knockout is a research and drug-safety tool. Nothing on this page is medical advice; every prediction is a hypothesis built from public records. Sources: ChEMBL, the IUIS classification through the Helix catalog, Orphanet, the Human Phenoty"
+    }
+   ]
+  },
+  "search": {
+   "x": 168,
+   "y": 634.5625,
+   "w": 640,
+   "h": 201.96875
+  },
+  "button": {
+   "x": 702.78125,
+   "y": 669.359375,
+   "w": 99.21875,
+   "h": 42
+  }
+ },
+ "eculizumab": {
+  "url": "http://127.0.0.1:3300/drug/eculizumab",
+  "capturedAt": "2026-10-17T23:26:39.974Z",
+  "viewport": {
+   "width": 1440,
+   "height": 900
+  },
+  "scale": 2,
+  "height": 3172,
+  "file": "eculizumab-full.jpg",
+  "sourceState": "Live API",
+  "rects": {
+   "header": [
+    {
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 57,
+     "text": "knockout −/− / Report / Eculizumab Live API Dark"
+    }
+   ],
+   "masthead": [
+    {
+     "x": 168,
+     "y": 105,
+     "w": 1104,
+     "h": 545,
+     "text": "SIDE-EFFECT REPORT Eculizumab Eculizumab blocks Complement C5. The genetic disease where that protein fails the same way, C5 deficiency, gives 3 predicted side effects; none could be checked yet, because step 5 has not mapped their symptoms"
+    }
+   ],
+   "title": [
+    {
+     "x": 168,
+     "y": 140,
+     "w": 1104,
+     "h": 68,
+     "text": "Eculizumab"
+    }
+   ],
+   "deck": [
+    {
+     "x": 168,
+     "y": 232,
+     "w": 704,
+     "h": 118,
+     "text": "Eculizumab blocks Complement C5. The genetic disease where that protein fails the same way, C5 deficiency, gives 3 predicted side effects; none could be checked yet, because step 5 has not mapped their symptoms to adverse-event terms."
+    }
+   ],
+   "meta": [
+    {
+     "x": 168,
+     "y": 382,
+     "w": 1104,
+     "h": 112,
+     "text": "ChEMBL CHEMBL1201828 Type Antibody, approved FDA label Effective Jul 8, 2026 FAERS reports 54,046 of 20,692,690 openFDA read Oct 17, 3:24 PM PDT Stored Oct 17, 3:24 PM PDT Run again"
+    }
+   ],
+   "fixtureBand": [],
+   "fixtureTag": [],
+   "problems": [
+    {
+     "x": 168,
+     "y": 518,
+     "w": 1104,
+     "h": 133,
+     "text": "One problem in this run Symptoms were not mapped to adverse-event terms, because the Gemini API key is not set on the server. 3 of 3 predicted effects could not be checked against the label or the reports, so they show as unknown, which is "
+    }
+   ],
+   "chainSection": [
+    {
+     "x": 168,
+     "y": 714,
+     "w": 1104,
+     "h": 352,
+     "text": "01 The chain Each link is a public record. A drug that blocks a protein borrows only from diseases where that protein does too little; one that activates it, only from diseases where it does too much. Drug Protein it acts on Genetic disease"
+    }
+   ],
+   "chain": [
+    {
+     "x": 168,
+     "y": 822,
+     "w": 1104,
+     "h": 244,
+     "text": "Drug Protein it acts on Genetic disease, same direction Predicted side effects Eculizumab CHEMBL1201828 Antibody Complement C5 C5 · P01031 Inhibitor, so it lowers its activity ChEMBL mechanism C5 deficiency C5 Too little activity of the pro"
+    }
+   ],
+   "chainNodes": [
+    {
+     "x": 168,
+     "y": 876,
+     "w": 198,
+     "h": 191,
+     "text": "Eculizumab CHEMBL1201828 Antibody"
+    },
+    {
+     "x": 422,
+     "y": 876,
+     "w": 220,
+     "h": 191,
+     "text": "Complement C5 C5 · P01031 Inhibitor, so it lowers its activity ChEMBL mechanism"
+    },
+    {
+     "x": 698,
+     "y": 876,
+     "w": 220,
+     "h": 191,
+     "text": "C5 deficiency C5 Too little activity of the protein Direction read from the disease name"
+    },
+    {
+     "x": 975,
+     "y": 876,
+     "w": 297,
+     "h": 191,
+     "text": "Decreased circulating complement C5 concentration 2/2 cases Recurrent Neisseria meningitidis infection 2/2 cases Reduced circulating CH50 activity 2/2 cases"
+    }
+   ],
+   "effectsSection": [
+    {
+     "x": 168,
+     "y": 1130,
+     "w": 1104,
+     "h": 439,
+     "text": "02 Predicted side effects 3 predictions. 0 of 3 checked so far. A mapped effect is checked against the label word for word, then against FAERS with the Evans criteria. All 3 On the label 0 Signal in reports 0 No signal 0 Unknown 3 Not check"
+    }
+   ],
+   "ledger": [
+    {
+     "x": 416,
+     "y": 1163,
+     "w": 856,
+     "h": 36,
+     "text": "All 3 On the label 0 Signal in reports 0 No signal 0 Unknown 3"
+    }
+   ],
+   "entries": [],
+   "unchecked": [
+    {
+     "x": 416,
+     "y": 1231,
+     "w": 856,
+     "h": 338,
+     "text": "Not checked yet 3 These symptoms have not been mapped to adverse-event terms (step 5), so there is nothing to look for in the label or the reports. Each counts as unknown, never as safe. All come from C5 deficiency. Predicted effect Frequen"
+    }
+   ],
+   "labelQuote": [],
+   "terms": [],
+   "statistic": [],
+   "criteria": [],
+   "twoByTwo": [],
+   "monitoringSection": [
+    {
+     "x": 168,
+     "y": 1634,
+     "w": 1104,
+     "h": 388,
+     "text": "03 Watching the reports A scheduled watch agent pulls new FAERS reports for every watched drug and recomputes each signal. This page never waits on a run. Last watch-agent run Oct 17, 2:45 PM PDT, 2 h ago. On the watchlist MENINGOCOCCAL INF"
+    }
+   ],
+   "monitorRun": [
+    {
+     "x": 416,
+     "y": 1673,
+     "w": 347,
+     "h": 24,
+     "text": "Last watch-agent run Oct 17, 2:45 PM PDT, 2 h ago."
+    }
+   ],
+   "trend": [
+    {
+     "x": 416,
+     "y": 1815,
+     "w": 264,
+     "h": 207,
+     "text": "MENINGOCOCCAL INFECTION reports received each quarter, peak 2 · PRR 146, all reports to 2026Q2 Term supplied to the watch agent by hand, not from this report's mapping 2024Q3 2026Q2"
+    }
+   ],
+   "alerts": [],
+   "notUsedSection": [
+    {
+     "x": 168,
+     "y": 2086,
+     "w": 1104,
+     "h": 289,
+     "text": "04 Set aside What the rules kept out, and why. Every protein found leads to a disease that points the same way as the drug. Symptoms too rare in the catalog to use Only symptoms seen in at least 30% of cases, or marked frequent, are predict"
+    }
+   ],
+   "caveats": [
+    {
+     "x": 168,
+     "y": 2439,
+     "w": 1104,
+     "h": 473,
+     "id": "caveats",
+     "text": "05 Read with care From the benchmark protocol, reported beside every number. Counts are not incidence. FAERS reports are voluntary and uneven, and counts are not incidence. The warning itself raises reporting. A boxed warning increases repo"
+    }
+   ],
+   "footer": [
+    {
+     "x": 0,
+     "y": 3008,
+     "w": 1440,
+     "h": 164,
+     "text": "Knockout is a research and drug-safety tool. Nothing on this page is medical advice; every prediction is a hypothesis built from public records. Sources: ChEMBL, the IUIS classification through the Helix catalog, Orphanet, the Human Phenoty"
+    }
+   ]
+  }
+ },
+ "eculizumab-fixture": {
+  "url": "http://127.0.0.1:3300/drug/eculizumab?fixture=1",
+  "capturedAt": "2026-10-17T23:26:39.974Z",
+  "viewport": {
+   "width": 1440,
+   "height": 900
+  },
+  "scale": 2,
+  "height": 3848,
+  "file": "eculizumab-fixture-full.jpg",
+  "sourceState": "FIXTURE",
+  "rects": {
+   "header": [
+    {
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 57,
+     "text": "knockout −/− / Report / Eculizumab FIXTURE Dark"
+    }
+   ],
+   "masthead": [
+    {
+     "x": 168,
+     "y": 194,
+     "w": 1104,
+     "h": 469,
+     "text": "SIDE-EFFECT REPORT FIXTURE Eculizumab Eculizumab blocks Complement C5. The genetic disease where that protein fails the same way, C5 deficiency, gives 3 predicted side effects; 1 of 3 checked against the FDA label and 54,046 adverse-event r"
+    }
+   ],
+   "title": [
+    {
+     "x": 168,
+     "y": 234,
+     "w": 1104,
+     "h": 68,
+     "text": "Eculizumab"
+    }
+   ],
+   "deck": [
+    {
+     "x": 168,
+     "y": 326,
+     "w": 704,
+     "h": 88,
+     "text": "Eculizumab blocks Complement C5. The genetic disease where that protein fails the same way, C5 deficiency, gives 3 predicted side effects; 1 of 3 checked against the FDA label and 54,046 adverse-event reports for the drug."
+    }
+   ],
+   "meta": [
+    {
+     "x": 168,
+     "y": 446,
+     "w": 1104,
+     "h": 60,
+     "text": "ChEMBL CHEMBL1201828 Type Antibody, approved FDA label Effective Jul 8, 2026 FAERS reports 54,046 of 20,692,690 Generated Oct 17, 1:46 PM PDT"
+    }
+   ],
+   "fixtureBand": [
+    {
+     "x": 0,
+     "y": 57,
+     "w": 1440,
+     "h": 89,
+     "text": "FIXTURE Development fixture. The chain, label and report totals come from the engine run of 17 Oct 2026 (data/reports/eculizumab.json). The reaction term and FAERS counts for the meningococcal prediction were filled in by hand from the veri"
+    }
+   ],
+   "fixtureTag": [
+    {
+     "x": 327,
+     "y": 194,
+     "w": 76,
+     "h": 24,
+     "text": "FIXTURE"
+    }
+   ],
+   "problems": [
+    {
+     "x": 168,
+     "y": 530,
+     "w": 1104,
+     "h": 133,
+     "text": "One problem in this run Symptoms were not mapped to adverse-event terms, because the Gemini API key is not set on the server. 2 of 3 predicted effects could not be checked against the label or the reports, so they show as unknown, which is "
+    }
+   ],
+   "chainSection": [
+    {
+     "x": 168,
+     "y": 726,
+     "w": 1104,
+     "h": 352,
+     "text": "01 The chain Each link is a public record. A drug that blocks a protein borrows only from diseases where that protein does too little; one that activates it, only from diseases where it does too much. Drug Protein it acts on Genetic disease"
+    }
+   ],
+   "chain": [
+    {
+     "x": 168,
+     "y": 834,
+     "w": 1104,
+     "h": 244,
+     "text": "Drug Protein it acts on Genetic disease, same direction Predicted side effects Eculizumab CHEMBL1201828 Antibody Complement C5 C5 · P01031 Inhibitor, so it lowers its activity ChEMBL mechanism C5 deficiency C5 Too little activity of the pro"
+    }
+   ],
+   "chainNodes": [
+    {
+     "x": 168,
+     "y": 888,
+     "w": 198,
+     "h": 191,
+     "text": "Eculizumab CHEMBL1201828 Antibody"
+    },
+    {
+     "x": 422,
+     "y": 888,
+     "w": 220,
+     "h": 191,
+     "text": "Complement C5 C5 · P01031 Inhibitor, so it lowers its activity ChEMBL mechanism"
+    },
+    {
+     "x": 698,
+     "y": 888,
+     "w": 220,
+     "h": 191,
+     "text": "C5 deficiency C5 Too little activity of the protein Direction read from the disease name"
+    },
+    {
+     "x": 975,
+     "y": 888,
+     "w": 297,
+     "h": 191,
+     "text": "Recurrent Neisseria meningitidis infection 2/2 cases Decreased circulating complement C5 concentration 2/2 cases Reduced circulating CH50 activity 2/2 cases"
+    }
+   ],
+   "effectsSection": [
+    {
+     "x": 168,
+     "y": 1143,
+     "w": 1104,
+     "h": 1465,
+     "text": "02 Predicted side effects 3 predictions. 1 of 3 checked so far. A mapped effect is checked against the label word for word, then against FAERS with the Evans criteria. All 3 On the label 1 Signal in reports 0 No signal 0 Unknown 2 On the la"
+    }
+   ],
+   "ledger": [
+    {
+     "x": 416,
+     "y": 1176,
+     "w": 856,
+     "h": 36,
+     "text": "All 3 On the label 1 Signal in reports 0 No signal 0 Unknown 2"
+    }
+   ],
+   "entries": [
+    {
+     "x": 416,
+     "y": 1244,
+     "w": 856,
+     "h": 1042,
+     "id": "effect-c5-deficiency-HP0005381",
+     "text": "On the label Recurrent Neisseria meningitidis infectionHP:0005381 Eculizumab blocks Complement C5. In C5 deficiency the same protein has too little activity, and this symptom is seen in 2 of 2 reported cases. Reaction terms MedDRA, as FAERS"
+    }
+   ],
+   "unchecked": [
+    {
+     "x": 416,
+     "y": 2334,
+     "w": 856,
+     "h": 274,
+     "text": "Not checked yet 2 These symptoms have not been mapped to adverse-event terms (step 5), so there is nothing to look for in the label or the reports. Each counts as unknown, never as safe. All come from C5 deficiency. Predicted effect Frequen"
+    }
+   ],
+   "labelQuote": [
+    {
+     "x": 592,
+     "y": 1493,
+     "w": 680,
+     "h": 148,
+     "text": "Boxed warning Label effective Jul 8, 2026 · DailyMed WARNING: SERIOUS MENINGOCOCCAL INFECTIONS SOLIRIS, a complement inhibitor, increases the risk of serious infections caused by Neisseria meningitidis [see Warnings and Precautions (5.1) ] "
+    }
+   ],
+   "terms": [
+    {
+     "x": 592,
+     "y": 1407,
+     "w": 680,
+     "h": 54,
+     "text": "MENINGOCOCCAL INFECTION"
+    }
+   ],
+   "statistic": [
+    {
+     "x": 592,
+     "y": 1673,
+     "w": 680,
+     "h": 146,
+     "text": "146 Proportional reporting ratio Eculizumab reports name this reaction 146 times as often as reports for every other drug. 0.81 reports would be expected if the two were unrelated. Evans criteria met ✓ At least 3 reports , met a = 86 ✓ PRR "
+    }
+   ],
+   "criteria": [
+    {
+     "x": 977,
+     "y": 1707,
+     "w": 295,
+     "h": 76,
+     "text": "✓ At least 3 reports , met a = 86 ✓ PRR at least 2 , met 146 ✓ χ² at least 4 , met 8,853"
+    }
+   ],
+   "twoByTwo": [
+    {
+     "x": 592,
+     "y": 1843,
+     "w": 680,
+     "h": 179,
+     "text": "Reports naming MENINGOCOCCAL INFECTION Drug This reaction Any other Total Eculizumab a86 b53,960 54,046 Other drugs c225 d20,638,419 20,638,644 All reports 311 20,692,379 20,692,690"
+    }
+   ],
+   "monitoringSection": [
+    {
+     "x": 168,
+     "y": 2671,
+     "w": 1104,
+     "h": 187,
+     "text": "03 Watching the reports A scheduled watch agent pulls new FAERS reports for every watched drug and recomputes each signal. This page never waits on a run. The fixture holds no watch-agent runs. Trends and threshold alerts appear here when t"
+    }
+   ],
+   "monitorRun": [],
+   "trend": [],
+   "alerts": [],
+   "notUsedSection": [
+    {
+     "x": 168,
+     "y": 2922,
+     "w": 1104,
+     "h": 129,
+     "text": "04 Set aside What the rules kept out, and why. Every protein found leads to a disease that points the same way as the drug. Symptoms are not classified yet (step 5), so developmental ones, which a drug given after birth cannot cause, have n"
+    }
+   ],
+   "caveats": [
+    {
+     "x": 168,
+     "y": 3115,
+     "w": 1104,
+     "h": 473,
+     "id": "caveats",
+     "text": "05 Read with care From the benchmark protocol, reported beside every number. Counts are not incidence. FAERS reports are voluntary and uneven, and counts are not incidence. The warning itself raises reporting. A boxed warning increases repo"
+    }
+   ],
+   "footer": [
+    {
+     "x": 416,
+     "y": 2115,
+     "w": 856,
+     "h": 171,
+     "text": "Read with care Counts are not incidence. The warning itself raises reporting. Infections may come from the disease being treated. A drug is a partial knockout. Not every report names the drug the same way. The reaction terms are a model's m"
+    },
+    {
+     "x": 0,
+     "y": 3684,
+     "w": 1440,
+     "h": 164,
+     "text": "Knockout is a research and drug-safety tool. Nothing on this page is medical advice; every prediction is a hypothesis built from public records. Sources: ChEMBL, the IUIS classification through the Helix catalog, Orphanet, the Human Phenoty"
+    }
+   ]
+  }
+ },
+ "ibrutinib": {
+  "url": "http://127.0.0.1:3300/drug/ibrutinib",
+  "capturedAt": "2026-10-17T23:26:39.974Z",
+  "viewport": {
+   "width": 1440,
+   "height": 900
+  },
+  "scale": 2,
+  "height": 6139,
+  "file": "ibrutinib-full.jpg",
+  "sourceState": "Live API",
+  "rects": {
+   "header": [
+    {
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 57,
+     "text": "knockout −/− / Report / Ibrutinib Live API Dark"
+    }
+   ],
+   "masthead": [
+    {
+     "x": 168,
+     "y": 105,
+     "w": 1104,
+     "h": 545,
+     "text": "SIDE-EFFECT REPORT Ibrutinib Ibrutinib blocks Tyrosine-protein kinase BTK. The genetic disease where that protein fails the same way, BTK deficiency, X-linked agammaglobulinemia, gives 37 predicted side effects; none could be checked yet, b"
+    }
+   ],
+   "title": [
+    {
+     "x": 168,
+     "y": 140,
+     "w": 1104,
+     "h": 68,
+     "text": "Ibrutinib"
+    }
+   ],
+   "deck": [
+    {
+     "x": 168,
+     "y": 232,
+     "w": 704,
+     "h": 118,
+     "text": "Ibrutinib blocks Tyrosine-protein kinase BTK. The genetic disease where that protein fails the same way, BTK deficiency, X-linked agammaglobulinemia, gives 37 predicted side effects; none could be checked yet, because step 5 has not mapped "
+    }
+   ],
+   "meta": [
+    {
+     "x": 168,
+     "y": 382,
+     "w": 1104,
+     "h": 112,
+     "text": "ChEMBL CHEMBL1873475 Type Small molecule, approved FDA label Effective Oct 21, 2025 FAERS reports 80,310 of 20,692,690 openFDA read Oct 17, 3:24 PM PDT Stored Oct 17, 3:24 PM PDT Run again"
+    }
+   ],
+   "fixtureBand": [],
+   "fixtureTag": [],
+   "problems": [
+    {
+     "x": 168,
+     "y": 518,
+     "w": 1104,
+     "h": 133,
+     "text": "One problem in this run Symptoms were not mapped to adverse-event terms, because the Gemini API key is not set on the server. 37 of 37 predicted effects could not be checked against the label or the reports, so they show as unknown, which i"
+    }
+   ],
+   "chainSection": [
+    {
+     "x": 168,
+     "y": 714,
+     "w": 1104,
+     "h": 605,
+     "text": "01 The chain Each link is a public record. A drug that blocks a protein borrows only from diseases where that protein does too little; one that activates it, only from diseases where it does too much. Drug Protein it acts on Genetic disease"
+    }
+   ],
+   "chain": [
+    {
+     "x": 168,
+     "y": 822,
+     "w": 1104,
+     "h": 497,
+     "text": "Drug Protein it acts on Genetic disease, same direction Predicted side effects Ibrutinib CHEMBL1873475 Small molecule Tyrosine-protein kinase BTK BTK · Q06187 Inhibitor, so it lowers its activity ChEMBL mechanism BTK deficiency, X-linked ag"
+    }
+   ],
+   "chainNodes": [
+    {
+     "x": 168,
+     "y": 876,
+     "w": 198,
+     "h": 443,
+     "text": "Ibrutinib CHEMBL1873475 Small molecule"
+    },
+    {
+     "x": 422,
+     "y": 876,
+     "w": 220,
+     "h": 443,
+     "text": "Tyrosine-protein kinase BTK BTK · Q06187 Inhibitor, so it lowers its activity ChEMBL mechanism"
+    },
+    {
+     "x": 698,
+     "y": 876,
+     "w": 220,
+     "h": 443,
+     "text": "BTK deficiency, X-linked agammaglobulinemia BTK Too little activity of the protein Direction read from the disease name"
+    },
+    {
+     "x": 975,
+     "y": 876,
+     "w": 297,
+     "h": 443,
+     "text": "Decreased total B cell count 44/44 cases Abnormality of the lymphatic system very frequent, 80–99% Abnormality of the tonsils very frequent, 80–99% Agammaglobulinemia very frequent, 80–99% Chronic diarrhea very frequent, 80–99% Chronic otit"
+    }
+   ],
+   "effectsSection": [
+    {
+     "x": 168,
+     "y": 1383,
+     "w": 1104,
+     "h": 2659,
+     "text": "02 Predicted side effects 37 predictions. 0 of 37 checked so far. A mapped effect is checked against the label word for word, then against FAERS with the Evans criteria. All 37 On the label 0 Signal in reports 0 No signal 0 Unknown 37 Not c"
+    }
+   ],
+   "ledger": [
+    {
+     "x": 416,
+     "y": 1416,
+     "w": 856,
+     "h": 36,
+     "text": "All 37 On the label 0 Signal in reports 0 No signal 0 Unknown 37"
+    }
+   ],
+   "entries": [],
+   "unchecked": [
+    {
+     "x": 416,
+     "y": 1484,
+     "w": 856,
+     "h": 2558,
+     "text": "Not checked yet 37 These symptoms have not been mapped to adverse-event terms (step 5), so there is nothing to look for in the label or the reports. Each counts as unknown, never as safe. All come from BTK deficiency, X-linked agammaglobuli"
+    }
+   ],
+   "labelQuote": [],
+   "terms": [],
+   "statistic": [],
+   "criteria": [],
+   "twoByTwo": [],
+   "monitoringSection": [
+    {
+     "x": 168,
+     "y": 4106,
+     "w": 1104,
+     "h": 187,
+     "text": "03 Watching the reports A scheduled watch agent pulls new FAERS reports for every watched drug and recomputes each signal. This page never waits on a run. The watch agent has not reported on Ibrutinib yet. Add to the watchlist"
+    }
+   ],
+   "monitorRun": [
+    {
+     "x": 416,
+     "y": 4145,
+     "w": 337,
+     "h": 24,
+     "text": "The watch agent has not reported on Ibrutinib yet."
+    }
+   ],
+   "trend": [],
+   "alerts": [],
+   "notUsedSection": [
+    {
+     "x": 168,
+     "y": 4357,
+     "w": 1104,
+     "h": 985,
+     "text": "04 Set aside What the rules kept out, and why. Every protein found leads to a disease that points the same way as the drug. Symptoms too rare in the catalog to use Only symptoms seen in at least 30% of cases, or marked frequent, are predict"
+    }
+   ],
+   "caveats": [
+    {
+     "x": 168,
+     "y": 5406,
+     "w": 1104,
+     "h": 473,
+     "id": "caveats",
+     "text": "05 Read with care From the benchmark protocol, reported beside every number. Counts are not incidence. FAERS reports are voluntary and uneven, and counts are not incidence. The warning itself raises reporting. A boxed warning increases repo"
+    }
+   ],
+   "footer": [
+    {
+     "x": 0,
+     "y": 5974,
+     "w": 1440,
+     "h": 164,
+     "text": "Knockout is a research and drug-safety tool. Nothing on this page is medical advice; every prediction is a hypothesis built from public records. Sources: ChEMBL, the IUIS classification through the Helix catalog, Orphanet, the Human Phenoty"
+    }
+   ]
+  }
+ },
+ "api": {
+  "capturedAt": "2026-10-17T23:26:39.974Z",
+  "url": "http://127.0.0.1:8800",
+  "health": {
+   "status": "ok",
+   "gemini_key": false,
+   "openfda_key": false,
+   "store": "postgres"
+  },
+  "eculizumab": {
+   "label": {
+    "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=ebcd67fa-b4d1-4a22-b33d-ee8bf6b9c722",
+    "set_id": "ebcd67fa-b4d1-4a22-b33d-ee8bf6b9c722",
+    "sections": [
+     "boxed_warning",
+     "warnings_and_cautions",
+     "adverse_reactions"
+    ],
+    "matched_by": "openfda.generic_name exact",
+    "generic_names": [
+     "ECULIZUMAB"
+    ],
+    "effective_time": "20260708"
+   },
+   "query": "soliris",
+   "targets": [
+    {
+     "gene": "C5",
+     "name": "Complement C5",
+     "used": true,
+     "effect": "lowers",
+     "reason": null,
+     "accession": "P01031",
+     "chembl_id": "CHEMBL2364163",
+     "action_types": [
+      "INHIBITOR"
+     ]
+    }
+   ],
+   "diseases": [
+    {
+     "gene": "C5",
+     "name": "C5 deficiency",
+     "pairing": "use",
+     "direction": "decreased_activity",
+     "disease_id": "c5-deficiency",
+     "direction_basis": "No catalog record states a mechanism class for C5. The IUIS disease label says \"deficiency\", which states that the protein does too little.",
+     "phenotypes_used": 3,
+     "direction_source": "disease_name"
+    }
+   ],
+   "molecule": {
+    "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1201828",
+    "name": "Eculizumab",
+    "chembl_id": "CHEMBL1201828",
+    "max_phase": 4,
+    "molecule_type": "Antibody"
+   },
+   "problems": [
+    "Step 5 could not map new phenotypes: GEMINI_API_KEY is not set in .env"
+   ],
+   "all_reports": 20692690,
+   "predictions": [
+    {
+     "gene": "C5",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0033060",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Complement C5",
+     "disease": "C5 deficiency",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL2364163",
+       "source": "chembl",
+       "description": "Eculizumab: INHIBITOR of Complement C5"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl8/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 8 row 12"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0012295",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0012295"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0012295",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0012295 exactMatch OMIM:609536"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1331",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1331 MONDO:0012295"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:609536",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:609536"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0000007",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0000007"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for C5. The IUIS disease label says \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0033060",
+       "source": "hpo_annotations",
+       "description": "Decreased circulating complement C5 concentration (2/2)"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "2/2",
+     "phenotype": "Decreased circulating complement C5 concentration",
+     "disease_id": "c5-deficiency",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "C5",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0005381",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Complement C5",
+     "disease": "C5 deficiency",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL2364163",
+       "source": "chembl",
+       "description": "Eculizumab: INHIBITOR of Complement C5"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl8/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 8 row 12"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0012295",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0012295"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0012295",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0012295 exactMatch OMIM:609536"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1331",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1331 MONDO:0012295"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:609536",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:609536"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0000007",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0000007"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for C5. The IUIS disease label says \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0005381",
+       "source": "hpo_annotations",
+       "description": "Recurrent Neisseria meningitidis infection (2/2)"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "2/2",
+     "phenotype": "Recurrent Neisseria meningitidis infection",
+     "disease_id": "c5-deficiency",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "C5",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0025434",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Complement C5",
+     "disease": "C5 deficiency",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL2364163",
+       "source": "chembl",
+       "description": "Eculizumab: INHIBITOR of Complement C5"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl8/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 8 row 12"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0012295",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0012295"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0012295",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0012295 exactMatch OMIM:609536"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1331",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1331 MONDO:0012295"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:609536",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:609536"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0000007",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0000007"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for C5. The IUIS disease label says \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0025434",
+       "source": "hpo_annotations",
+       "description": "Reduced circulating CH50 activity (2/2)"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "2/2",
+     "phenotype": "Reduced circulating CH50 activity",
+     "disease_id": "c5-deficiency",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    }
+   ],
+   "drug_reports": 54046,
+   "generated_at": "2026-10-17T22:24:15+00:00",
+   "openfda_retrieved_at": "2026-10-17T22:24:15+00:00",
+   "excluded_by_frequency": [
+    {
+     "hpo_id": "HP:0007569",
+     "frequency": null,
+     "phenotype": "Generalized seborrheic dermatitis",
+     "disease_id": "c5-deficiency"
+    },
+    {
+     "hpo_id": "HP:0002041",
+     "frequency": null,
+     "phenotype": "Intractable diarrhea",
+     "disease_id": "c5-deficiency"
+    },
+    {
+     "hpo_id": "HP:0005430",
+     "frequency": null,
+     "phenotype": "Recurrent Neisserial infections",
+     "disease_id": "c5-deficiency"
+    }
+   ],
+   "excluded_developmental": [],
+   "cached_at": "2026-10-17T22:24:17+00:00"
+  },
+  "trend": {
+   "drug": "eculizumab",
+   "terms": [
+    {
+     "term": "MENINGOCOCCAL INFECTION",
+     "source": "manual",
+     "quarters": [
+      {
+       "quarter": "2024Q3",
+       "reports": 0,
+       "prr": 157.58936504814085,
+       "signal": true
+      },
+      {
+       "quarter": "2024Q4",
+       "reports": 1,
+       "prr": 157.34626540971718,
+       "signal": true
+      },
+      {
+       "quarter": "2025Q1",
+       "reports": 0,
+       "prr": 153.77362860211312,
+       "signal": true
+      },
+      {
+       "quarter": "2025Q2",
+       "reports": 2,
+       "prr": 154.84699930432095,
+       "signal": true
+      },
+      {
+       "quarter": "2025Q3",
+       "reports": 1,
+       "prr": 154.10335278315458,
+       "signal": true
+      },
+      {
+       "quarter": "2025Q4",
+       "reports": 0,
+       "prr": 151.13792816320353,
+       "signal": true
+      },
+      {
+       "quarter": "2026Q1",
+       "reports": 2,
+       "prr": 151.36778537814428,
+       "signal": true
+      },
+      {
+       "quarter": "2026Q2",
+       "reports": 0,
+       "prr": 145.95989293071335,
+       "signal": true
+      }
+     ]
+    }
+   ],
+   "last_run_at": "2026-10-17T21:45:31+00:00"
+  },
+  "alerts": {
+   "drug": "eculizumab",
+   "alerts": []
+  },
+  "ibrutinib": {
+   "label": {
+    "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=0dfd0279-ff17-4ea9-89be-9803c71bab44",
+    "set_id": "0dfd0279-ff17-4ea9-89be-9803c71bab44",
+    "sections": [
+     "warnings_and_cautions",
+     "adverse_reactions"
+    ],
+    "matched_by": "openfda.generic_name exact",
+    "generic_names": [
+     "IBRUTINIB"
+    ],
+    "effective_time": "20251021"
+   },
+   "query": "ibrutinib",
+   "targets": [
+    {
+     "gene": "BTK",
+     "name": "Tyrosine-protein kinase BTK",
+     "used": true,
+     "effect": "lowers",
+     "reason": null,
+     "accession": "Q06187",
+     "chembl_id": "CHEMBL5251",
+     "action_types": [
+      "INHIBITOR"
+     ]
+    }
+   ],
+   "diseases": [
+    {
+     "gene": "BTK",
+     "name": "BTK deficiency, X-linked agammaglobulinemia",
+     "pairing": "use",
+     "direction": "decreased_activity",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "direction_basis": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little.",
+     "phenotypes_used": 37,
+     "direction_source": "disease_name"
+    }
+   ],
+   "molecule": {
+    "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1873475",
+    "name": "Ibrutinib",
+    "chembl_id": "CHEMBL1873475",
+    "max_phase": 4,
+    "molecule_type": "Small molecule"
+   },
+   "problems": [
+    "Step 5 could not map new phenotypes: GEMINI_API_KEY is not set in .env"
+   ],
+   "all_reports": 20692690,
+   "predictions": [
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0010976",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0010976",
+       "source": "hpo_annotations",
+       "description": "Decreased total B cell count (44/44)"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "44/44",
+     "phenotype": "Decreased total B cell count",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0100763",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0100763",
+       "source": "orphadata_product4",
+       "description": "Abnormality of the lymphatic system (Very frequent (99-80%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Very frequent (99-80%)",
+     "phenotype": "Abnormality of the lymphatic system",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0100765",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0100765",
+       "source": "orphadata_product4",
+       "description": "Abnormality of the tonsils (Very frequent (99-80%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Very frequent (99-80%)",
+     "phenotype": "Abnormality of the tonsils",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0004432",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0004432",
+       "source": "orphadata_product4",
+       "description": "Agammaglobulinemia (Very frequent (99-80%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Very frequent (99-80%)",
+     "phenotype": "Agammaglobulinemia",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0002028",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0002028",
+       "source": "orphadata_product4",
+       "description": "Chronic diarrhea (Very frequent (99-80%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Very frequent (99-80%)",
+     "phenotype": "Chronic diarrhea",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0000389",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0000389",
+       "source": "orphadata_product4",
+       "description": "Chronic otitis media (Very frequent (99-80%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Very frequent (99-80%)",
+     "phenotype": "Chronic otitis media",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0000509",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0000509",
+       "source": "orphadata_product4",
+       "description": "Conjunctivitis (Very frequent (99-80%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Very frequent (99-80%)",
+     "phenotype": "Conjunctivitis",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0001508",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0001508",
+       "source": "orphadata_product4",
+       "description": "Failure to thrive (Very frequent (99-80%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Very frequent (99-80%)",
+     "phenotype": "Failure to thrive",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0012378",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0012378",
+       "source": "orphadata_product4",
+       "description": "Fatigue (Very frequent (99-80%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Very frequent (99-80%)",
+     "phenotype": "Fatigue",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0001945",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0001945",
+       "source": "orphadata_product4",
+       "description": "Fever (Very frequent (99-80%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Very frequent (99-80%)",
+     "phenotype": "Fever",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0000162",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0000162",
+       "source": "orphadata_product4",
+       "description": "Glossoptosis (Very frequent (99-80%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Very frequent (99-80%)",
+     "phenotype": "Glossoptosis",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0002721",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0002721",
+       "source": "orphadata_product4",
+       "description": "Immunodeficiency (Very frequent (99-80%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Very frequent (99-80%)",
+     "phenotype": "Immunodeficiency",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0100838",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0100838",
+       "source": "orphadata_product4",
+       "description": "Recurrent cutaneous abscess formation (Very frequent (99-80%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Very frequent (99-80%)",
+     "phenotype": "Recurrent cutaneous abscess formation",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0006532",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0006532",
+       "source": "orphadata_product4",
+       "description": "Recurrent pneumonia (Very frequent (99-80%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Very frequent (99-80%)",
+     "phenotype": "Recurrent pneumonia",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0004322",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0004322",
+       "source": "orphadata_product4",
+       "description": "Short stature (Very frequent (99-80%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Very frequent (99-80%)",
+     "phenotype": "Short stature",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0000246",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0000246",
+       "source": "orphadata_product4",
+       "description": "Sinusitis (Very frequent (99-80%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Very frequent (99-80%)",
+     "phenotype": "Sinusitis",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0000988",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0000988",
+       "source": "orphadata_product4",
+       "description": "Skin rash (Very frequent (99-80%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Very frequent (99-80%)",
+     "phenotype": "Skin rash",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0200042",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0200042",
+       "source": "orphadata_product4",
+       "description": "Skin ulcer (Very frequent (99-80%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Very frequent (99-80%)",
+     "phenotype": "Skin ulcer",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0002783",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0002783",
+       "source": "hpo_annotations",
+       "description": "Recurrent lower respiratory tract infections (19/22)"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "19/22",
+     "phenotype": "Recurrent lower respiratory tract infections",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0002088",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0002088",
+       "source": "orphadata_product4",
+       "description": "Abnormal lung morphology (Frequent (79-30%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Frequent (79-30%)",
+     "phenotype": "Abnormal lung morphology",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0001369",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0001369",
+       "source": "orphadata_product4",
+       "description": "Arthritis (Frequent (79-30%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Frequent (79-30%)",
+     "phenotype": "Arthritis",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0100658",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0100658",
+       "source": "orphadata_product4",
+       "description": "Cellulitis (Frequent (79-30%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Frequent (79-30%)",
+     "phenotype": "Cellulitis",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0001875",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0001875",
+       "source": "orphadata_product4",
+       "description": "Decreased total neutrophil count (Frequent (79-30%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Frequent (79-30%)",
+     "phenotype": "Decreased total neutrophil count",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0002901",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0002901",
+       "source": "orphadata_product4",
+       "description": "Hypocalcemia (Frequent (79-30%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Frequent (79-30%)",
+     "phenotype": "Hypocalcemia",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0001287",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0001287",
+       "source": "orphadata_product4",
+       "description": "Meningitis (Frequent (79-30%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Frequent (79-30%)",
+     "phenotype": "Meningitis",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0000407",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0000407",
+       "source": "orphadata_product4",
+       "description": "Sensorineural hearing impairment (Frequent (79-30%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Frequent (79-30%)",
+     "phenotype": "Sensorineural hearing impairment",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0100806",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0100806",
+       "source": "orphadata_product4",
+       "description": "Sepsis (Frequent (79-30%))"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "Frequent (79-30%)",
+     "phenotype": "Sepsis",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0002110",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0002110",
+       "source": "hpo_annotations",
+       "description": "Bronchiectasis (11/19)"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "11/19",
+     "phenotype": "Bronchiectasis",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0000403",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0000403",
+       "source": "hpo_annotations",
+       "description": "Recurrent otitis media (23/41)"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "23/41",
+     "phenotype": "Recurrent otitis media",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0011108",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0011108",
+       "source": "hpo_annotations",
+       "description": "Recurrent sinusitis (13/19)"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "13/19",
+     "phenotype": "Recurrent sinusitis",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0011946",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0011946",
+       "source": "hpo_annotations",
+       "description": "Bronchiolitis obliterans (2/2)"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "2/2",
+     "phenotype": "Bronchiolitis obliterans",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0410303",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0410303",
+       "source": "hpo_annotations",
+       "description": "Complete or near-complete absence of specific antibody response to protein-conjugated Haemophilus influenzae type b vaccine (1/1)"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "1/1",
+     "phenotype": "Complete or near-complete absence of specific antibody response to protein-conjugated Haemophilus influenzae type b vaccine",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0002720",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0002720",
+       "source": "hpo_annotations",
+       "description": "Decreased circulating IgA concentration (2/3)"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "2/3",
+     "phenotype": "Decreased circulating IgA concentration",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0005479",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0005479",
+       "source": "hpo_annotations",
+       "description": "Decreased circulating IgE concentration (2/2)"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "2/2",
+     "phenotype": "Decreased circulating IgE concentration",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0004315",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0004315",
+       "source": "hpo_annotations",
+       "description": "Decreased circulating IgG concentration (2/3)"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "2/3",
+     "phenotype": "Decreased circulating IgG concentration",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0002850",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0002850",
+       "source": "hpo_annotations",
+       "description": "Decreased circulating IgM concentration (3/3)"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "3/3",
+     "phenotype": "Decreased circulating IgM concentration",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    },
+    {
+     "gene": "BTK",
+     "kind": null,
+     "counts": [],
+     "hpo_id": "HP:0030828",
+     "reason": "phenotype not mapped yet (step 5)",
+     "target": "Tyrosine-protein kinase BTK",
+     "disease": "BTK deficiency, X-linked agammaglobulinemia",
+     "records": [
+      {
+       "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL5251",
+       "source": "chembl",
+       "description": "Ibrutinib: INHIBITOR of Tyrosine-protein kinase BTK"
+      },
+      {
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/table/tbl3/",
+       "source": "iuis_2024",
+       "description": "Catalog record Table 3.1 row 1"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo",
+       "description": "Catalog record MONDO:0010421"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_omim",
+       "description": "Catalog record MONDO:0010421 exactMatch OMIM:300755"
+      },
+      {
+       "url": "https://monarchinitiative.org/MONDO:0010421",
+       "source": "mondo_sssom_orphanet",
+       "description": "Catalog record MONDO:0010421 exactMatch ORPHA:47"
+      },
+      {
+       "url": "https://search.thegencc.org/genes/HGNC:1133",
+       "source": "gencc",
+       "description": "Catalog record HGNC:1133 MONDO:0010421"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product1",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://www.orpha.net/en/disease/detail/47",
+       "source": "orphadata_product4",
+       "description": "Catalog record ORPHA:47"
+      },
+      {
+       "url": "https://ontology.jax.org/api/network/annotation/OMIM:300755",
+       "source": "hpo_annotations",
+       "description": "Catalog record OMIM:300755"
+      },
+      {
+       "url": "http://purl.obolibrary.org/obo/HP_0001417",
+       "source": "hpo_ontology",
+       "description": "Catalog record HP:0001417"
+      },
+      {
+       "url": null,
+       "source": "disease_name",
+       "description": "No catalog record states a mechanism class for BTK. The IUIS disease label says \"agammaglobulinemia\", \"deficiency\", which states that the protein does too little."
+      },
+      {
+       "url": "https://hpo.jax.org/browse/term/HP:0030828",
+       "source": "hpo_annotations",
+       "description": "Wheezing (2/2)"
+      }
+     ],
+     "verdict": "unknown",
+     "frequency": "2/2",
+     "phenotype": "Wheezing",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia",
+     "label_term": null,
+     "label_section": null,
+     "label_sentence": null,
+     "reaction_terms": [],
+     "candidate_new_signal": false
+    }
+   ],
+   "drug_reports": 80310,
+   "generated_at": "2026-10-17T22:24:07+00:00",
+   "openfda_retrieved_at": "2026-10-17T22:24:08+00:00",
+   "excluded_by_frequency": [
+    {
+     "hpo_id": "HP:0001596",
+     "frequency": "Occasional (29-5%)",
+     "phenotype": "Alopecia",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0001903",
+     "frequency": "Occasional (29-5%)",
+     "phenotype": "Anemia",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0002960",
+     "frequency": "Occasional (29-5%)",
+     "phenotype": "Autoimmunity",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0012115",
+     "frequency": "Occasional (29-5%)",
+     "phenotype": "Hepatitis",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0001053",
+     "frequency": "Occasional (29-5%)",
+     "phenotype": "Hypopigmented skin patches",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0002024",
+     "frequency": "Occasional (29-5%)",
+     "phenotype": "Malabsorption",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0002664",
+     "frequency": "Occasional (29-5%)",
+     "phenotype": "Neoplasm",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0002754",
+     "frequency": "Occasional (29-5%)",
+     "phenotype": "Osteomyelitis",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0001873",
+     "frequency": "Occasional (29-5%)",
+     "phenotype": "Thrombocytopenia",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0001824",
+     "frequency": "Occasional (29-5%)",
+     "phenotype": "Weight loss",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0001402",
+     "frequency": "1/19",
+     "phenotype": "Hepatocellular carcinoma",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0001648",
+     "frequency": null,
+     "phenotype": "Cor pulmonale",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0000750",
+     "frequency": null,
+     "phenotype": "Delayed speech and language development",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0003729",
+     "frequency": null,
+     "phenotype": "Enteroviral dermatomyositis syndrome",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0001412",
+     "frequency": null,
+     "phenotype": "Enteroviral hepatitis",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0000031",
+     "frequency": null,
+     "phenotype": "Epididymitis",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0000365",
+     "frequency": null,
+     "phenotype": "Hearing impairment",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0002383",
+     "frequency": null,
+     "phenotype": "Infectious encephalitis",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0002732",
+     "frequency": null,
+     "phenotype": "Lymph node hypoplasia",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0000024",
+     "frequency": null,
+     "phenotype": "Prostatitis",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0000999",
+     "frequency": null,
+     "phenotype": "Pyoderma",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0002719",
+     "frequency": null,
+     "phenotype": "Recurrent infections",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0000010",
+     "frequency": null,
+     "phenotype": "Recurrent urinary tract infections",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    },
+    {
+     "hpo_id": "HP:0003095",
+     "frequency": null,
+     "phenotype": "Septic arthritis",
+     "disease_id": "btk-deficiency-x-linked-agammaglobulinemia"
+    }
+   ],
+   "excluded_developmental": [],
+   "cached_at": "2026-10-17T22:24:10+00:00"
+  }
+ },
+ "apiCalls": [
+  "GET http://127.0.0.1:8800/api/health -> 200",
+  "GET http://127.0.0.1:8800/api/drugs/eculizumab/report -> 200",
+  "GET http://127.0.0.1:8800/api/drugs/eculizumab/alerts -> 200",
+  "GET http://127.0.0.1:8800/api/watchlist -> 200",
+  "GET http://127.0.0.1:8800/api/drugs/eculizumab/trend -> 200",
+  "GET http://127.0.0.1:8800/api/health -> 200",
+  "GET http://127.0.0.1:8800/api/drugs/eculizumab/report -> 200",
+  "GET http://127.0.0.1:8800/api/watchlist -> 200",
+  "GET http://127.0.0.1:8800/api/drugs/eculizumab/alerts -> 200",
+  "GET http://127.0.0.1:8800/api/drugs/eculizumab/trend -> 200",
+  "GET http://127.0.0.1:8800/api/health -> 200",
+  "GET http://127.0.0.1:8800/api/health -> 200",
+  "GET http://127.0.0.1:8800/api/drugs/ibrutinib/report -> 200",
+  "GET http://127.0.0.1:8800/api/watchlist -> 200",
+  "GET http://127.0.0.1:8800/api/drugs/ibrutinib/alerts -> 200",
+  "GET http://127.0.0.1:8800/api/drugs/ibrutinib/trend -> 200"
+ ]
+}

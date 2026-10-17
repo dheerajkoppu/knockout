@@ -1,0 +1,312 @@
+/* Shared pieces every video uses: the 1920×1080 stage, scene grounds, the phone, touches, captions, and the
+   presenter's camera. stage.css sets the tokens and styles this video's own scenes. */
+:root {
+  --ink: #000;
+  --ground: #111114;
+  --paper: #fff;
+  --paper-ink: #1d1d1f;
+  --muted: #86868b;
+  --accent: #d65e0b;
+  --accent-light: #ffa45d;
+  --display:
+    "SF Pro Display", "SF Pro", -apple-system, "Helvetica Neue", sans-serif;
+  --rounded: "SF Pro Rounded", "SF Pro Display", -apple-system, sans-serif;
+  --mono: "SF Mono", ui-monospace, Menlo, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  background: #000;
+}
+#stage {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background: var(--ink);
+  color: #fff;
+  font-family: var(--display);
+  -webkit-font-smoothing: antialiased;
+}
+.scene {
+  position: absolute;
+  inset: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+.scene.dark {
+  background: radial-gradient(
+    ellipse 70% 60% at 50% 45%,
+    var(--ground) 0%,
+    var(--ink) 70%
+  );
+}
+.scene.light {
+  background: var(--paper);
+  color: var(--paper-ink);
+}
+.mono {
+  font-family: var(--mono);
+  font-size: 15px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+/* Words from wordsInto(), so each can move on its own. */
+.w {
+  display: inline-block;
+}
+.hi {
+  color: var(--accent-light);
+}
+.scene.light .hi {
+  color: var(--accent);
+}
+
+/* A soft brand glow behind the product or the logo. */
+.glow {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(40px);
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--accent-light) 16%, transparent) 0%,
+    color-mix(in srgb, var(--accent) 7%, transparent) 30%,
+    transparent 72%
+  );
+}
+
+/* A plate is a large image with an SVG overlay in the same pixel coordinates (a map, a screenshot, a diagram).
+   Give it its image's width and height inline, and move it with camera(). */
+.plate {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: 0 0;
+  will-change: transform;
+}
+.plate img,
+.plate svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.plate svg {
+  overflow: visible;
+}
+.plate-shade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 70% 70% at 55% 50%,
+    transparent 30%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+}
+
+/* Lines drawn with drawable(), and pin() and tag() labels */
+.route-casing {
+  fill: none;
+  stroke: rgba(0, 0, 0, 0.85);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.route-line {
+  fill: none;
+  stroke: var(--accent-light);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.route-head {
+  fill: #fff;
+  stroke: var(--accent);
+}
+.pin-label {
+  font-family: var(--rounded);
+  font-weight: 600;
+  font-size: 22px;
+  fill: var(--paper-ink);
+}
+.pin-capsule {
+  fill: #fff;
+}
+.tag-text {
+  font-family: var(--display);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Phone: a neutral frame with concentric corners and a uniform bezel. Its origin is the screen's center,
+   so gsap x and y place that center on the stage. */
+.phone-rig {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1920px;
+  height: 1080px;
+  pointer-events: none;
+  visibility: hidden;
+}
+.phone {
+  position: absolute;
+  width: 434px;
+  height: 913px;
+  left: -217px;
+  top: -456.5px;
+  border-radius: 69px;
+  padding: 13px;
+  background: #0a0a0b;
+  box-shadow:
+    0 0 0 2.5px #505055,
+    0 0 0 3.5px #1c1c1e,
+    inset 0 0 0 1px rgba(255, 255, 255, 0.06),
+    0 50px 120px rgba(0, 0, 0, 0.65),
+    0 12px 30px rgba(0, 0, 0, 0.45);
+  will-change: transform;
+}
+.screen {
+  position: relative;
+  width: 408px;
+  height: 887px;
+  border-radius: 56px;
+  overflow: hidden;
+  background: #000;
+  transform: translateZ(0);
+}
+.screen img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+}
+.screen-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+#touches {
+  position: absolute;
+  inset: 0;
+}
+.touch {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: -32px 0 0 -32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.28);
+  border: 2.5px solid rgba(255, 255, 255, 0.9);
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.15),
+    0 6px 20px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+}
+
+/* Captions sit above every scene; buildCaptions() adds .on-light over light grounds. */
+.caption {
+  position: absolute;
+  left: 50%;
+  bottom: 56px;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 1160px;
+  text-align: center;
+  text-wrap: balance;
+  font-family: "SF Pro Text", var(--display);
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  line-height: 1.28;
+  color: #fff;
+  text-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.55),
+    0 4px 24px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+.caption.on-light {
+  color: var(--paper-ink);
+  text-shadow: none;
+}
+.caption .hi {
+  color: var(--accent-light);
+}
+.caption.on-light .hi {
+  color: var(--accent);
+}
+
+/* The presenter's camera: a wide shot beside a scene's type, and a corner window everywhere else. */
+.presenter {
+  position: absolute;
+  left: 800px;
+  bottom: 0;
+  height: 1000px;
+  -webkit-mask-image:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      #000 20%,
+      #000 82%,
+      transparent 100%
+    ),
+    linear-gradient(180deg, transparent 0%, #000 9%, #000 80%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      #000 20%,
+      #000 82%,
+      transparent 100%
+    ),
+    linear-gradient(180deg, transparent 0%, #000 9%, #000 80%, transparent 100%);
+  mask-composite: intersect;
+}
+.presenter-window {
+  position: absolute;
+  right: 64px;
+  bottom: 64px;
+  width: 280px;
+  height: 280px;
+  border-radius: 40px;
+  overflow: hidden;
+  background: #000;
+  opacity: 0;
+  box-shadow:
+    0 0 0 1.5px rgba(255, 255, 255, 0.24),
+    0 24px 60px rgba(0, 0, 0, 0.45);
+}
+.presenter-window img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* stage.html?nocaptions renders without burned-in captions; ?clean also drops anything marked .overlay. */
+body.nocaptions #caption,
+body.clean #caption,
+body.clean .overlay {
+  display: none;
+}
+
+/* Browser preview (?play or ?t=): the stage scales to fit the window. */
+body.preview {
+  overflow: hidden;
+}
+body.preview #stage {
+  transform-origin: 0 0;
+}

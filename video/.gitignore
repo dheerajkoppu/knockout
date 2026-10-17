@@ -1,0 +1,13 @@
+node_modules/
+.venv/
+renders/
+frames/
+stage/footage/
+audio/vo/
+audio/*.wav
+capture/logs/
+narration/takes/
+narration/*.wav
+narration/camera.mp4
+out/music-options/
+out/*.mp4

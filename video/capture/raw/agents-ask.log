@@ -1,0 +1,6 @@
+INFO:httpx:HTTP Request: GET http://127.0.0.1:8800/api/drugs/eculizumab/report "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:8800/api/drugs/eculizumab/report "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:8800/api/drugs/eculizumab/report "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:8800/api/drugs/eculizumab/report "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:8800/api/drugs/eculizumab/trend "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:8800/api/drugs/eculizumab/alerts "HTTP/1.1 200 OK"
