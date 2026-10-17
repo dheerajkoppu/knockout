@@ -36,7 +36,7 @@ SCHEMA = {
                 "type": "OBJECT",
                 "properties": {
                     "hpo_id": {"type": "STRING"},
-                    "kind": {"type": "STRING"},
+                    "kind": {"type": "STRING", "enum": list(KINDS)},
                     "reaction_terms": {"type": "ARRAY", "items": {"type": "STRING"}},
                 },
                 "required": ["hpo_id", "kind", "reaction_terms"],
@@ -59,7 +59,7 @@ class TermMapping:
 def _load() -> dict:
     if MAPPINGS_PATH.exists():
         return json.loads(MAPPINGS_PATH.read_text())
-    return {"protocol_version": 1, "terms": {}}
+    return {"protocol_version": 2, "terms": {}}
 
 
 def _save(store: dict) -> None:
@@ -105,7 +105,10 @@ def ensure(terms: dict[str, str]) -> dict[str, TermMapping]:
                 row = returned.get(hpo_id)
                 if row is None:
                     continue
-                kind = row["kind"] if row["kind"] in KINDS else "clinical"
+                kind = str(row.get("kind") or "").strip().lower()
+                if kind not in KINDS:
+                    # Left unmapped rather than guessed, so a developmental term is never scored as clinical.
+                    continue
                 kept, rejected = _validate(row.get("reaction_terms", []))
                 store["terms"][hpo_id] = {
                     "label": label,

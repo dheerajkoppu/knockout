@@ -53,5 +53,5 @@ class TermCounts:
 
     @property
     def underpowered(self) -> bool:
-        """Even a doubled reporting rate could not reach the minimum number of reports."""
-        return self.a < MIN_REPORTS and 2 * self.expected < MIN_REPORTS
+        """Even a doubled reporting rate could not reach the minimum number of reports (protocol step 8)."""
+        return 2 * self.expected < MIN_REPORTS

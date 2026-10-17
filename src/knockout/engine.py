@@ -73,9 +73,11 @@ class Report:
     diseases: list[DiseaseRow] = field(default_factory=list)
     predictions: list[Prediction] = field(default_factory=list)
     excluded_developmental: list[dict] = field(default_factory=list)
+    excluded_by_frequency: list[dict] = field(default_factory=list)
     label: dict | None = None
     drug_reports: int | None = None
     all_reports: int | None = None
+    openfda_retrieved_at: str | None = None
     problems: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict:
@@ -136,6 +138,11 @@ def _diseases(report: Report, target: TargetRow) -> list[tuple[DiseaseRow, list]
         if row.pairing == "use":
             phenotypes = genetics.qualifying_phenotypes(disease)
             row.phenotypes_used = len(phenotypes)
+            report.excluded_by_frequency.extend(
+                {"hpo_id": phenotype.hpo_id, "phenotype": phenotype.label or phenotype.hpo_id,
+                 "frequency": phenotype.frequency, "disease_id": disease.id}
+                for phenotype in genetics.excluded_phenotypes(disease)
+            )
             used.append((row, disease, phenotypes))
     if not used:
         target.reason = target.reason or "no disease of this protein pairs with the drug's effect"
@@ -192,13 +199,22 @@ def predict(query: str, *, generate_mappings: bool = True) -> Report:
             "effective_time": label.effective_time,
             "generic_names": list(label.generic_names),
             "sections": list(label.sections),
+            "matched_by": label.matched_by,
             "url": label.url,
         }
+    reports_problem = None
     try:
         report.drug_reports = openfda.total(openfda.drug_search(generic_name))
         report.all_reports = openfda.total(None)
     except SourceError as error:
-        report.problems.append(f"openFDA reports unavailable: {error}")
+        reports_problem = f"openFDA reports unavailable: {error}"
+        report.problems.append(reports_problem)
+    retrieval_times = [time for time in (
+        label.retrieved_at if label else None,
+        openfda.total_retrieved_at(openfda.drug_search(generic_name)),
+        openfda.total_retrieved_at(None),
+    ) if time]
+    report.openfda_retrieved_at = min(retrieval_times) if retrieval_times else None
 
     for target, disease_row, disease, phenotype in rows:
         mapped = mappings.get(phenotype.hpo_id)
@@ -241,7 +257,9 @@ def predict(query: str, *, generate_mappings: bool = True) -> Report:
                 prediction.records.append(Record("openfda_label", f"{match.section}: {match.sentence}", label.url))
 
         counts: list[TermCounts] = []
-        if report.drug_reports is not None and report.all_reports:
+        if report.drug_reports is None or not report.all_reports:
+            prediction.reason = reports_problem or "openFDA reports unavailable: no report totals"
+        else:
             try:
                 counts = [_count(generic_name, term, report.drug_reports, report.all_reports)
                           for term in prediction.reaction_terms]

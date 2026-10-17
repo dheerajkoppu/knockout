@@ -72,7 +72,10 @@ def main() -> int:
 
     if arguments.command == "setup":
         return setup()
+    from knockout import observability
     from knockout.engine import predict as run
+
+    observability.setup()
 
     report = run(arguments.drug, generate_mappings=not arguments.no_generate).to_dict()
     if arguments.json:

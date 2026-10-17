@@ -32,6 +32,14 @@ def test_underpowered_when_a_doubled_rate_cannot_reach_three_reports():
     assert not TermCounts(term="X", a=0, drug=50_000, reaction=10_000, all=10_000_000).underpowered
 
 
+def test_underpowered_follows_the_protocol_even_with_three_reports():
+    """Protocol step 8: unknown when 2 × expected < 3, whatever a is (here expected 1.4, no signal)."""
+    counts = TermCounts(term="X", a=3, drug=1000, reaction=1400, all=1_000_000)
+    assert round(counts.expected, 2) == 1.4
+    assert not counts.is_signal
+    assert counts.underpowered
+
+
 @pytest.mark.parametrize(
     ("effect", "direction", "expected"),
     [
@@ -98,3 +106,20 @@ def test_eculizumab_steps_6_and_7_on_live_data():
     counts = _count("eculizumab", "MENINGOCOCCAL INFECTION", openfda.total(openfda.drug_search("eculizumab")),
                     openfda.total(None))
     assert counts.a >= 3 and counts.is_signal
+
+
+def test_mechanisms_include_records_filed_on_salt_forms(monkeypatch):
+    from knockout import chembl
+
+    requested = []
+
+    def fake_get_json(url, **_):
+        requested.append(url)
+        if "/mechanism.json" in url:
+            return {"mechanisms": [{"mec_id": 934, "action_type": "INHIBITOR", "target_chembl_id": None}]}
+        raise AssertionError(url)
+
+    monkeypatch.setattr(chembl, "get_json", fake_get_json)
+    records = chembl.mechanisms("CHEMBL1789941")
+    assert "parent_molecule_chembl_id=CHEMBL1789941" in requested[0]
+    assert [record.record_id for record in records] == [934]

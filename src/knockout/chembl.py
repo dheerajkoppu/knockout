@@ -89,7 +89,8 @@ def target(chembl_id: str) -> Target:
 
 
 def mechanisms(chembl_id: str) -> list[Mechanism]:
-    rows = get_json(f"{BASE}/mechanism.json?molecule_chembl_id={chembl_id}&limit=100")["mechanisms"]
+    """Every record under the parent molecule, including those ChEMBL files on its salt forms."""
+    rows = get_json(f"{BASE}/mechanism.json?parent_molecule_chembl_id={chembl_id}&limit=100")["mechanisms"]
     return [
         Mechanism(
             record_id=row["mec_id"],

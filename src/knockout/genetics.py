@@ -42,6 +42,9 @@ def diseases(gene: SeedGene) -> list[SeedDisease]:
 def disease_direction(disease: SeedDisease, gene_symbol: str) -> DiseaseDirection:
     """IUIS stated mechanism, then Orphanet product 6, then the disease name, as the protocol orders them."""
     resolved = resolve_mechanism(catalog(), [disease], gene_symbol)
+    if resolved.confidence == "stated_in_the_catalog" and resolved.mechanism_class == "neomorph":
+        # Protocol step 3 counts only gain of function as increased activity; a new function is not more of the old one.
+        return DiseaseDirection("unknown", "iuis", f"{resolved.basis} A neomorph is not a direction the protocol uses.")
     if resolved.confidence == "stated_in_the_catalog":
         return DiseaseDirection(resolved.direction, "iuis", resolved.basis)
     for code in disease.xrefs.orphanet:
@@ -68,3 +71,7 @@ def frequency_qualifies(frequency: str | None) -> bool:
 
 def qualifying_phenotypes(disease: SeedDisease) -> list[SeedPhenotype]:
     return [phenotype for phenotype in disease.phenotypes if frequency_qualifies(phenotype.frequency)]
+
+
+def excluded_phenotypes(disease: SeedDisease) -> list[SeedPhenotype]:
+    return [phenotype for phenotype in disease.phenotypes if not frequency_qualifies(phenotype.frequency)]
