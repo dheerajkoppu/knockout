@@ -21,8 +21,9 @@ FDA adverse-event reports, and keeps checking as new reports arrive.
   eculizumab reports and 311 reports of that reaction across 20.7 million. The proportional
   reporting ratio is 146.
 
-Second and third demo drugs: ibrutinib (ChEMBL: BTK INHIBITOR; BTK deficiency) and tofacitinib
-(JAK3 and JAK1; JAK3 deficiency). Check both through the full pipeline before using them on stage.
+Second and third demo drugs: ibrutinib (ChEMBL: BTK INHIBITOR; BTK deficiency) and ruxolitinib
+(JAK1 and JAK2). Tofacitinib gives no prediction, because ChEMBL files its target as a protein family and
+the protocol uses single proteins only. Check both through the full pipeline before using them on stage.
 
 ## Where the code lives
 
@@ -177,7 +178,7 @@ how they are judged; neither prize is listed.
 | Sat 13:30–14:30 | Accounts and keys: openFDA API key, Agentverse and ASI:One (codes `LAHACKSAI26`, `LAHACKSAI26AV`), Creao via the hackathon signup link, Tiger Data, Vultr credits, Sentry, Gemini, Devin, Paper. Create the repo. Commit `benchmark/PROTOCOL.md` |
 | Sat 14:30–20:00 | Each workstream reaches its "done when" for eculizumab                                                                                                                                                                                           |
 | **Sat 20:00**   | **Checkpoint 1:** eculizumab end to end in ASI:One                                                                                                                                                                                               |
-| Sat 20:00–01:00 | Ibrutinib and tofacitinib through the pipeline. First full benchmark run. Watch agent live. Payment Protocol and Interactive Card. Report page built from the Paper design                                                                       |
+| Sat 20:00–01:00 | Ibrutinib and ruxolitinib through the pipeline. First full benchmark run. Watch agent live. Payment Protocol and Interactive Card. Report page built from the Paper design                                                                       |
 | **Sun 01:00**   | **Checkpoint 2:** benchmark numbers in the README                                                                                                                                                                                                |
 | Sun 01:00–07:00 | Sleep in shifts. One person on error handling, retries and the Sentry fix                                                                                                                                                                        |
 | Sun 07:00–09:30 | Polish. **Feature freeze at 09:30**                                                                                                                                                                                                              |
@@ -196,7 +197,7 @@ the watch agent run), the domain, the Interactive Card (fall back to a text tabl
 - [ ] Video exactly **3:00** (Devpost asks 2–3 minutes, Fetch.ai asks 3–5)
 - [ ] Public GitHub repository with run instructions
 - [ ] README: "Built at LA Hacks" section, agent names and addresses, Fetch.ai badges, Creao agent
-      ID and run link, Devin session links, what is real and what is simulated, measured results
+      ID and run link, what is real and what is simulated, measured results
 - [ ] Fetch.ai Submission Agent on ASI:One
 - [ ] Commit Fellowship supplemental form
 - [ ] Every team member present for judging at 12:30
@@ -212,6 +213,12 @@ the watch agent run), the domain, the Interactive Card (fall back to a text tabl
 | 2:10 | One candidate signal that is in the reports and not on the label, with its caveats                                      |
 | 2:30 | The watch agent's last run updating a trend                                                                             |
 | 2:45 | What is new at LA Hacks, the limits, close: "Every genetic disease already ran the trial."                              |
+
+The file must be exactly 3:00: Devpost allows 2 to 3 minutes and Fetch.ai asks for 3 to 5, so 180 s is
+the only length that meets both. Check with `ffprobe -v error -show_entries format=duration -of csv=p=0 video.mp4`
+(it must print 180.0). Record from the live path once step 5 runs. If the benchmark is still missing at
+the 09:30 freeze, replace 1:40 with "protocol frozen, scoring pending" on screen and 2:10 with the
+watch agent's trend. If the fixture is used, the FIXTURE tag must be visible and said aloud.
 
 ## Known risks
 
